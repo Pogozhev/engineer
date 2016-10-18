@@ -1,0 +1,454 @@
+@charset "utf-8";
+/*CSS Document*/
+
+html, body {
+font-size: 100%/1.5em;
+   font-family: Century Gothic;
+   background-color: #ffffff;
+   text-align:justify;
+    
+}
+
+.clearing {
+    clear:both;
+}
+
+/*--------------#32AE00------position:absolute;--------Obolochka---------url(/assets/images/logo_idea.jpg) no-repeat----.logo-wrap {
+    width: 1900px;
+    height: 100px;
+    margin-left: -50px;
+    background:url(/assets/images/logo_idea.jpg) no-repeat;
+#zae{
+
+margin:0 auto;
+text-align:center;
+color:#F1F1F1;
+font-size: 70px !important;
+font-family: Arkitech !important;
+
+}
+    
+}----position: relative;--------*/
+#sidebar {
+    position: fixed;
+    z-index: 6;
+    margin-left: 0.01%;
+}
+.header {width:100%; background-image: url(/assets/images/idea.jpg);}
+#sidebar .logo:hover {}
+.logo-wrap
+{ 
+
+margin-right: auto;
+width: 900px;
+height: 100px;
+
+background-image: url(/assets/images/logo_idea.png); 
+}
+
+#text{ padding-top: 50px;}
+#zae{}
+.block
+{
+float: left;
+position: absolute;
+background-color: black;
+width:20%;
+}
+
+
+
+
+
+.logoText
+{
+    line-width: 50% !important;
+}
+.logo {
+    
+    width: 200px;
+    
+    background-color:#e4f4ce;
+
+}
+
+.menu{
+    width: 200px;
+    background-color:#e4f4ce;
+    border-radius: 0 0 20px 20px;
+}
+.list-menu{
+    padding-left: 0px !important;
+    list-style-type: none;
+    color: #250e3a !important;
+}
+.navbar {
+    border: 0px !important;
+    width:100%;
+    border-radius: 0px !important;
+}
+.nav > li > a{
+    margin: 0 3px;
+    color: #f7ebe1 !important;
+    background-color: #250e3a !important;
+}
+.nav > li :hover,
+.nav > li :active {
+    /*color: #f4ddce !important;
+    background-color: #250e3a;*/
+    color: #9ad277 !important;
+}
+.navbar-default {
+    background-color: #250e3a;
+    margin: 0 auto;
+    z-index: 5 !important;
+}
+#navbar {
+    position: fixed;
+    top: 100px;
+
+}
+.logoimage {
+    margin: 0 auto;
+}
+
+#mainTable{
+    
+	
+}
+.tab-content
+{
+height: 250px;
+}
+.btn .btn-primary
+{
+margin-left:10px important;
+margin-bottom:10px important;
+}
+.Big {font-size: 21 !important;}
+#firstTd{padding:0 10px;border-right: 1px solid black;}
+
+a{
+    text-decoration: none !important;
+}
+
+.tab-content{
+margin-bottom: 50px;
+
+}
+
+.btm
+{
+    color: #000000 !important;
+    padding: 4px 0 0 10px;
+    width:200px;
+    height:30px;
+}
+.sidebar-option :hover {
+    color: #f7ebe1 !important;
+    background-color: #9ad277;
+}
+.last
+{
+    width:200px;
+    height:30px;
+    border-radius: 0 0 20px 20px;
+}
+/*----------------------------text-------------------------*/
+
+.input-group {
+    margin-bottom: 10px;
+}
+.content {
+    background-color: #ffffff;
+    margin: 0 auto 30px;
+    padding: 15px 330px 30px 330px;
+    width: 1360px;
+
+    overflow: auto;
+    z-index: 1;
+}
+.width70 {width: 70px;}
+.width100 {width: 100px;}
+.width150 {width: 150px;}
+.width200 {width: 200px;}
+.width300 {width: 300px;}
+.width350 {width: 350px;}
+.width400 {width: 400px;}
+.width550 {width: 550px;}
+.width600 {width: 600px;}
+.text-center {text-align: center}
+.left {float: left;}
+.down {
+    margin-left: 5px;
+    margin-top: 22px;
+}
+.form-control {
+    margin-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+}
+.checkbox {
+    margin-left: 20px;
+}
+.radio {
+    display: inline-block;
+}
+.flex {
+    resize: none;
+}
+textarea {
+    resize: vertical;
+}
+legend {
+    margin-top: 30px;
+    border-bottom: 1px solid #0f9b8f;
+}
+.help-block {
+    margin-top: 0px;
+}
+.wrap {
+    height: 60px;
+    white-space: pre-line;
+}
+.green {
+
+}
+.red {
+
+}
+.no-padding {
+    padding: 0 15px 0;
+}
+hr {
+    border-bottom: 1px solid #9ad277;
+}
+p {
+    line-height: 1.2;
+}
+.sponsors_line {
+    text-align: center;
+    background-color: #ffffff;
+}
+.sponsor {
+    margin: 5px 10px 5px;
+}
+
+label {
+    margin-top: 3px;
+    padding: 0 !important;
+}
+.error {
+    color: #ec8b3d;
+}
+form {
+    padding-left: 0;
+    padding-right: 0;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/*-------------timetable---------------------*/
+.timetable h3 {
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+
+
+.timetable h3 small {
+
+    color: #000;
+
+}
+
+
+
+.timetable-items {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin-bottom: 30px;
+
+
+
+}
+
+
+
+.timetable-items > li {
+
+    padding: 12px 0 0;
+
+    border-top: 1px solid #e7e7e7
+
+}
+
+
+
+
+
+.timetable-items > li:first-child{
+
+    border: none;
+
+}
+
+
+
+.timetable-time {
+
+    font-size: 20px;
+
+    color: #000000;
+
+    float: left;
+
+    margin-top: 2px;
+
+    width: 90px;
+
+}
+
+
+
+.timetable-body {
+
+    
+
+    overflow: hidden;
+
+}
+
+
+
+.timetable-items{
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+
+
+.timetable-items > li{
+}
+
+
+
+
+
+.timetable-place{
+
+    font-size: 12px;
+
+    margin-top: 10px;
+
+    font-family: Century Gothic;
+
+}
+
+
+
+.timetable-body-more {
+
+    display: none;
+
+    font-size: 12px;
+
+    padding-top: 15px;
+
+}
+
+.timetable-body {
+    padding: 0 15px 20px;
+    border-left: 7px solid transparent;
+}
+
+.blue .timetable-body{
+    border-color: #3E6AB3;
+}
+
+.red .timetable-body{
+    border-color: #ec8b3d;
+}
+
+.green .timetable-body{
+    border-color: #7EBB42;
+}
+
+.free .timetable-body{
+    border-color: #F9AA4B;
+}
+
+.timetable-body.active .timetable-body-more{
+
+    display: block;
+
+}
+
+
+
+.timetable-body.active{
+
+    background: #eee;
+
+    padding: 10px 15px;
+
+}
+
+
+
+.timetable-name {
+    font-weight: bold;
+    font-size: 21px;
+
+}
+
+
+
+.timetable-name span{
+
+
+
+
+    cursor: pointer;
+
+    color: #3E6AB3;
+
+
+}
+.Big {font-size: 21 !important;}
+
+.master-intersecting{
+    color: indianred;
+}
+
+.master-full{
+    color: coral;
+}
+
+.info {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+
+/* Foto */
+.foto img{margin: 5px; border: 3px solid #000000;}
+a.photo:hover img { border: 3px solid #008200; }
+
+
+.select2-container {
+    width: 100% !important;
+}

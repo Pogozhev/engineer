@@ -1,0 +1,205 @@
+<?php defined('SYSPATH') OR die('No direct script access.'); ?>
+
+2015-11-04 02:40:41 --- EMERGENCY: ErrorException [ 8 ]: Undefined index: participants ~ MODPATH/smarty3/vendor/smarty/libs/sysplugins/smarty_internal_templatebase.php(165) : eval()'d code [ 334 ] in /www/engineer.tpu.ru/techconf.tomsk/modules/smarty3/vendor/smarty/libs/sysplugins/smarty_internal_templatebase.php(165) : eval()'d code:334
+2015-11-04 02:40:41 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/modules/smarty3/vendor/smarty/libs/sysplugins/smarty_internal_templatebase.php(165) : eval()'d code(334): Kohana_Core::error_handler(8, 'Undefined index...', '/www/engineer.t...', 334, Array)
+#1 /www/engineer.tpu.ru/techconf.tomsk/modules/smarty3/vendor/smarty/libs/sysplugins/smarty_internal_templatebase.php(182): content_56305f78f10320_76461752(Object(Smarty_Internal_Template))
+#2 /www/engineer.tpu.ru/techconf.tomsk/modules/smarty3/classes/Smarty/View.php(383): Smarty_Internal_TemplateBase->fetch('/www/engineer.t...')
+#3 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/View.php(228): Smarty_View->render()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Response.php(160): Kohana_View->__toString()
+#5 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Lonely.php(46): Kohana_Response->body(Object(Smarty_View))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Lonely->action_masters()
+#7 [internal function]: Kohana_Controller->execute()
+#8 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Lonely))
+#9 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#10 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#11 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#12 {main} in /www/engineer.tpu.ru/techconf.tomsk/modules/smarty3/vendor/smarty/libs/sysplugins/smarty_internal_templatebase.php(165) : eval()'d code:334
+2015-11-04 02:40:51 --- EMERGENCY: ErrorException [ 8 ]: Undefined index: participants ~ APPPATH/cache/smarty_compiled/c9f90f8733129df8bd7b86fc740f0125fc6aace6.file.masters.tpl.php [ 334 ] in /www/engineer.tpu.ru/techconf.tomsk/application/cache/smarty_compiled/c9f90f8733129df8bd7b86fc740f0125fc6aace6.file.masters.tpl.php:334
+2015-11-04 02:40:51 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/cache/smarty_compiled/c9f90f8733129df8bd7b86fc740f0125fc6aace6.file.masters.tpl.php(334): Kohana_Core::error_handler(8, 'Undefined index...', '/www/engineer.t...', 334, Array)
+#1 /www/engineer.tpu.ru/techconf.tomsk/modules/smarty3/vendor/smarty/libs/sysplugins/smarty_internal_templatebase.php(182): content_56305f78f10320_76461752(Object(Smarty_Internal_Template))
+#2 /www/engineer.tpu.ru/techconf.tomsk/modules/smarty3/classes/Smarty/View.php(383): Smarty_Internal_TemplateBase->fetch('/www/engineer.t...')
+#3 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/View.php(228): Smarty_View->render()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Response.php(160): Kohana_View->__toString()
+#5 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Lonely.php(46): Kohana_Response->body(Object(Smarty_View))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Lonely->action_masters()
+#7 [internal function]: Kohana_Controller->execute()
+#8 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Lonely))
+#9 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#10 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#11 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#12 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/cache/smarty_compiled/c9f90f8733129df8bd7b86fc740f0125fc6aace6.file.masters.tpl.php:334
+2015-11-04 12:09:18 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 12:09:18 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(298): PHPExcel_Worksheet->setTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#2 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#8 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 12:30:28 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 12:30:28 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(298): PHPExcel_Worksheet->setTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#2 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#8 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 12:37:28 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 12:37:28 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(298): PHPExcel_Worksheet->setTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#2 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#8 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 12:49:12 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 12:49:12 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(298): PHPExcel_Worksheet->setTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#2 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#8 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 12:57:41 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 12:57:41 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(298): PHPExcel_Worksheet->setTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#2 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#8 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 13:34:46 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 13:34:46 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(298): PHPExcel_Worksheet->setTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#2 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#8 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:47:13 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:47:13 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(298): PHPExcel_Worksheet->setTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#2 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#8 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:47:26 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:47:26 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(298): PHPExcel_Worksheet->setTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#2 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#8 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:48:12 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:48:12 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(298): PHPExcel_Worksheet->setTitle('\xD0\x97\xD0\xB0\xD0\xBA\xD1\x80\xD1\x8B\xD1\x82\xD0\xB0\xD1...')
+#2 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#8 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:48:56 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:48:56 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(344): PHPExcel_Worksheet->setTitle('\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...', false)
+#2 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(294): PHPExcel_Worksheet->__construct(Object(PHPExcel), '\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...')
+#3 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#9 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:48:58 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:48:58 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(344): PHPExcel_Worksheet->setTitle('\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...', false)
+#2 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(294): PHPExcel_Worksheet->__construct(Object(PHPExcel), '\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...')
+#3 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#9 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:51:37 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:51:37 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(344): PHPExcel_Worksheet->setTitle('\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...', false)
+#2 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(294): PHPExcel_Worksheet->__construct(Object(PHPExcel), '\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...')
+#3 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#9 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:52:06 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet title. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 481 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:52:06 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(344): PHPExcel_Worksheet->setTitle('\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...', false)
+#2 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(294): PHPExcel_Worksheet->__construct(Object(PHPExcel), '\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...')
+#3 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#9 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 14:58:45 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Maximum 31 characters allowed in sheet code name. ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 457 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:3132
+2015-11-04 14:58:45 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(3132): PHPExcel_Worksheet::_checkSheetCodeName('\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80_\xD0\xBA...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(346): PHPExcel_Worksheet->setCodeName('\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...')
+#2 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(294): PHPExcel_Worksheet->__construct(Object(PHPExcel), '\xD0\x9C\xD0\xB0\xD1\x81\xD1\x82\xD0\xB5\xD1\x80 \xD0\xBA...')
+#3 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#4 [internal function]: Kohana_Controller->execute()
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#9 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:3132
+2015-11-04 15:03:23 --- EMERGENCY: Kohana_Exception [ 0 ]: The begin_unixtime property does not exist in the Model_Master class ~ MODPATH/orm/classes/Kohana/ORM.php [ 687 ] in /www/engineer.tpu.ru/techconf.tomsk/modules/orm/classes/Kohana/ORM.php:603
+2015-11-04 15:03:23 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/modules/orm/classes/Kohana/ORM.php(603): Kohana_ORM->get('begin_unixtime')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(305): Kohana_ORM->__get('begin_unixtime')
+#2 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#8 {main} in /www/engineer.tpu.ru/techconf.tomsk/modules/orm/classes/Kohana/ORM.php:603
+2015-11-04 15:18:26 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Invalid character found in sheet title ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 475 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 15:18:26 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('13 Nov, 16:20-1...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(303): PHPExcel_Worksheet->setTitle('13 Nov, 16:20-1...')
+#2 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#8 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 15:19:00 --- EMERGENCY: PHPExcel_Exception [ 0 ]: Invalid character found in sheet title ~ APPPATH/vendor/phpexcel/PHPExcel/Worksheet.php [ 475 ] in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
+2015-11-04 15:19:00 --- DEBUG: #0 /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php(882): PHPExcel_Worksheet::_checkSheetTitle('13 Nov 16:20-17...')
+#1 /www/engineer.tpu.ru/techconf.tomsk/application/classes/Controller/Admin.php(303): PHPExcel_Worksheet->setTitle('13 Nov 16:20-17...')
+#2 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Controller.php(84): Controller_Admin->action_list()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /www/engineer.tpu.ru/techconf.tomsk/system/classes/Kohana/Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 /www/engineer.tpu.ru/techconf.tomsk/index.php(118): Kohana_Request->execute()
+#8 {main} in /www/engineer.tpu.ru/techconf.tomsk/application/vendor/phpexcel/PHPExcel/Worksheet.php:882
