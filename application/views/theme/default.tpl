@@ -2,6 +2,10 @@
 <!--<html>-->
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+
+
+
     <title>Ярмарка проектов</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

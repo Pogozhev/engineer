@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-17 08:08:24
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-19 17:09:17
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\pages\orgprojects.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:89458043109afc518-95946982%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f691a404a7fbdf48d6e57a48f691e316c4c1727b' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\\\pages\\orgprojects.tpl',
-      1 => 1476670102,
+      1 => 1476783454,
       2 => 'file',
     ),
     'dabbea9ee3d7e0c1016ac6ddc356912b694f6d36' => 
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1454311920,
+      1 => 1476777390,
       2 => 'file',
     ),
   ),
@@ -100,8 +100,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <li class="sidebar-option"><a href="/"><div class="btm">Главная</div></a></li>
                     <!--  <li class="sidebar-option"><a href="<?php echo URL::site('titles');?>
 "><div class="btm">Спикеры</div></a></li> -->
-                    <li class="sidebar-option"><a href="<?php echo URL::site('sections');?>
-"> <div class="btm">Программа ярмарки</div></a></li>
+                   <!-- <li class="sidebar-option"><a href="<?php echo URL::site('sections');?>
+"> <div class="btm">Программа ярмарки</div></a></li> -->
                     <li class="sidebar-option"><a href="#"> <div class="btm">Проекты</div></a>
                         <ul  class="sub_menu" >
                             <li class="sidebar-option"><a href="<?php echo URL::site('ideas');?>
@@ -202,7 +202,7 @@ $_smarty_tpl->tpl_vars['project']->_loop = true;
         </div>
     <?php } ?>
 
-    <script src="/assets/js/jquery.form.min.js" type="text/javascript"></script>
+
     <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
     <script src="/assets/js/ideas.js" type="text/javascript"></script>

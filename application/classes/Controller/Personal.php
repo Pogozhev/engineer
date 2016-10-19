@@ -10,6 +10,7 @@ class Controller_Personal extends Controller_Common {
     {
         $view = View::factory('/personal/profile.tpl');
         Helper_Common::init_roles($view);
+        $tags = ORM::factory('Participant_Tag')->find_all();
 
         $user = Auth::instance()->get_user();
         if($user)
@@ -23,7 +24,8 @@ class Controller_Personal extends Controller_Common {
                 ->set('university', $participant->university)
                 ->set('school', $participant->school)
                 ->set('branches', $branches)
-                ->set('courses', $courses);
+                ->set('courses', $courses)
+                ->set('tags', $tags);
             $this->response->body($view);
         }
         else HTTP::redirect('/registration');
@@ -34,6 +36,7 @@ class Controller_Personal extends Controller_Common {
      */
     public function action_projects()
     {
+        $tags = ORM::factory('Idea_Tag')->find_all();
         $view = View::factory('/personal/projects.tpl');
         Helper_Common::init_roles($view);
 
@@ -75,7 +78,9 @@ class Controller_Personal extends Controller_Common {
                 ->set('pinvitations', $pinvitations)
                 ->set('vacancies', $vacancies)
                 ->set('vacancies_participants', $vacancies_participants)
-                ->set('has_invitations', $has_invitations);
+                ->set('has_invitations', $has_invitations)
+                ->set('tags', $tags);
+
             $this->response->body($view);
         }
         else HTTP::redirect('/registration');

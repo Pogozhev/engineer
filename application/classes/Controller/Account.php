@@ -164,6 +164,7 @@ class Controller_Account extends Controller_Common {
                     ->set('participant_id', $participant_id)
                     ->set('title', $_POST['school_title'])
                     ->set('class', $_POST['school_class'])
+                    ->set('tags', $tags)
                     ->save();
             }
             else
@@ -181,6 +182,7 @@ class Controller_Account extends Controller_Common {
                     ->set('group_title', $_POST['uni_group'])
                     ->set('is_elit', $_POST['is_elit'])
                     ->set('elit_group_title', $_POST['elit_group'])
+                    ->set('tags', $tags)
                     ->save();
             }
 

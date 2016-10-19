@@ -30,6 +30,12 @@ $(document).ready(function($) {
             $('#navbar').css('top', 100 - scrolltop);
         }
     });
+    /* -------------------- Шрифты --------------------------- */
 
+    WebFont.load({
+        custom: {
+            families: ['Sunday']
+        }
+    });
 });
 

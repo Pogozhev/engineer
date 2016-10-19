@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-18 19:12:48
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-19 19:47:22
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\pages\vacancies.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1735758042c1e85f8c3-63572810%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7b5359a4db3c0713c61088e9528057b1fbc05f6a' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\\\pages\\vacancies.tpl',
-      1 => 1476796363,
+      1 => 1476874115,
       2 => 'file',
     ),
     'dabbea9ee3d7e0c1016ac6ddc356912b694f6d36' => 
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1476777390,
+      1 => 1476882271,
       2 => 'file',
     ),
     '66743d4eb1945f96fc3179df4db79a2f83fa0830' => 
@@ -47,40 +47,34 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <!--<html>-->
 <html lang="en">
 <head>
+
+    <script>
+        WebFont.load({
+            custom: {
+                families: ['Sunday']
+            }
+        });
+    </script>
+
     <title>Ярмарка проектов</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/assets/css/main.css" rel="stylesheet" media="screen">
 
-    <script src="/assets/lib/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/assets/js/jquery.maskedinput.min.js" type="text/javascript"></script>
-    <script src="/assets/js/main.js" type="text/javascript"></script>
-    <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
 
     <!-- Выпадающее меню (Потребовался для программы) -->
     <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen, projection"/>
     <link href="/assets/css/ie.css" type="text/css" rel="stylesheet" media="screen">
 
-    <script type="text/javascript" src="/assets/js/bootstrap-dropdown.js"></script>
-    <script type="text/javascript" src="/assets/js/bootstrap-carousel.js"></script>
-    <script type="text/javascript" language="javascript" src="/assets/js/jquery.dropdownPlain.js"></script>
-
     <!-- Owl Carousel и Nested (Потребовался для программы) -->
     <link rel="stylesheet" href="/assets/plugins/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="/assets/plugins/owl-carousel/owl.theme.css">
 
-    <script src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
-    <script src="/assets/plugins/nested/jquery.nested.js"></script>
-    <script src="/assets/plugins/nested/makeboxes.js"></script>
-
     <!-- FOTO -->
     <link rel="stylesheet" type="text/css" href="/assets/js/fancybox/jquery.fancybox-1.3.4.css"/>
-    <script type="text/javascript" src="/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-    <script type="text/javascript" src="/assets/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-    <script type="text/javascript" src="/assets/js/fancybox/jquery.easing-1.3.pack.js"></script>
 
-    <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="keywords" content="html5, responsive, image gallery, masonry, picture, images, sizes, fluid, history api, visibility api"/>
      <meta name="author" content="Codrops"/>
@@ -172,7 +166,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <?php /*  Call merged included template "pages/includes/invitations.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('pages/includes/invitations.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '1735758042c1e85f8c3-63572810');
-content_58061fd0bd1398_28707674($_smarty_tpl);
+content_5807796a9bfac4_48735478($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "pages/includes/invitations.tpl" */?>
 
@@ -181,7 +175,7 @@ $_smarty_tpl = array_pop($_tpl_stack);
         <hr>
         <p align="center"><b>Если вы – руководитель или участник проекта, и понимаете, что к вам в команду нужны люди, то вы можете в личном кабинете или при регистрации проекта написать вакансию, которая отобразится на этой страничке. Участники смогут увидеть эту вакансию и подать свою кандидатуру на рассмотрение, чтобы вы выбрали в свою команду лучшего участника.</b></p>
     <hr><br>
-        <form class="form_search" id="form_search" action="<?php echo smarty_function_url(array('route'=>'default','controller'=>'page','action'=>'ideas'),$_smarty_tpl);?>
+        <form class="form_search" id="form_search" action="<?php echo smarty_function_url(array('route'=>'default','controller'=>'page','action'=>'vacancies'),$_smarty_tpl);?>
 " method="GET">
 
             <label for="tags">Поиск идей по ключевым словам или описанию:</label>
@@ -357,11 +351,31 @@ $_smarty_tpl->tpl_vars['vacancy']->_loop = true;
 
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+
+    <!-- FOTO -->
+    <script type="text/javascript" src="/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="/assets/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="/assets/js/fancybox/jquery.easing-1.3.pack.js"></script>
+
+    <script src="/assets/lib/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/assets/js/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="/assets/js/main.js" type="text/javascript"></script>
+    <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <script src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="/assets/plugins/nested/jquery.nested.js"></script>
+    <script src="/assets/plugins/nested/makeboxes.js"></script>
+
+    <script type="text/javascript" src="/assets/js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap-carousel.js"></script>
+    <script type="text/javascript" language="javascript" src="/assets/js/jquery.dropdownPlain.js"></script>
+
 </body>
 </html><?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-18 19:12:48
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-19 19:47:22
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\pages\includes\invitations.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_58061fd0bd1398_28707674')) {function content_58061fd0bd1398_28707674($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['has_invitations']->value) {?>
+<?php if ($_valid && !is_callable('content_5807796a9bfac4_48735478')) {function content_5807796a9bfac4_48735478($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['has_invitations']->value) {?>
     <div class="col-md-12">
         <h4>Вы получили приглашение в проекты:</h4>
         <hr>

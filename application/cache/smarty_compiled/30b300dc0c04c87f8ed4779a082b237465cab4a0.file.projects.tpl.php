@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-18 15:37:58
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-19 20:55:56
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\pages\projects.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1627358042c1d94b044-53523711%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1476777390,
+      1 => 1476888821,
       2 => 'file',
     ),
     '66743d4eb1945f96fc3179df4db79a2f83fa0830' => 
@@ -48,6 +48,10 @@ if (!is_callable('smarty_function_query')) include 'C:\\OpenServer\\domains\\tec
 <!--<html>-->
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+
+
+
     <title>Ярмарка проектов</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -172,7 +176,7 @@ if (!is_callable('smarty_function_query')) include 'C:\\OpenServer\\domains\\tec
     <?php /*  Call merged included template "pages/includes/invitations.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('pages/includes/invitations.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '1627358042c1d94b044-53523711');
-content_5805ed760d6b77_52366376($_smarty_tpl);
+content_5807897c3d28a6_42407759($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "pages/includes/invitations.tpl" */?>
 
@@ -318,9 +322,9 @@ $_smarty_tpl->tpl_vars['project']->_loop = true;
 
 </body>
 </html><?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-18 15:37:58
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-19 20:55:56
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\pages\includes\invitations.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5805ed760d6b77_52366376')) {function content_5805ed760d6b77_52366376($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['has_invitations']->value) {?>
+<?php if ($_valid && !is_callable('content_5807897c3d28a6_42407759')) {function content_5807897c3d28a6_42407759($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['has_invitations']->value) {?>
     <div class="col-md-12">
         <h4>Вы получили приглашение в проекты:</h4>
         <hr>

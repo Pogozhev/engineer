@@ -10,6 +10,7 @@ class Controller_Form extends Controller_Common {
      */
     public function action_index()
     {
+        $tags = ORM::factory('Participant_Tag')->find_all();
         $view = View::factory('/form/form.tpl');
         Helper_Common::init_roles($view);
 
@@ -18,7 +19,8 @@ class Controller_Form extends Controller_Common {
 
         $view
             ->set('branches', $branches)
-            ->set('courses', $courses);
+            ->set('courses', $courses)
+            ->set('tags', $tags);
 
         $this->response->body($view);
     }
@@ -28,6 +30,8 @@ class Controller_Form extends Controller_Common {
      */
     public function action_saveproject()
     {
+
+
         if (HTTP_Request::POST == $this->request->method())
         {
             $post = $_POST;
@@ -70,11 +74,19 @@ class Controller_Form extends Controller_Common {
                 }
             }
 
-            //Проходим по всем вакансиям и записываем их данные
+        //-------------------------- Проходим по всем вакансиям и записываем их данные --------------------------------
+
             foreach ($post['vacancy_title'] as $k => $vacancy_title)
             {
                 if($k != 'vid') //Убедимся, что не заносим в БД шаблон
                 {
+                    foreach($post['tags'] as $tag)
+                    {
+                        if(substr($tag, 0, 1) != "#")
+                            $tag = "#" . $tag;
+                        $post['description'] = $post['description'] . " " . $tag;
+                    }
+
                     $vacancy = ORM::factory('Vacancy')
                         ->set('title', $post['vacancy_title'][$k])
                         ->set('description', $post['vacancy_description'][$k])

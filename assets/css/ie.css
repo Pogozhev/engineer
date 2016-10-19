@@ -43,5 +43,5 @@ ul.list-menu ul li					{ display: inline; width: 100%; }
 .right_speaker_bio > img{max-width:150px;max-height:80px;}
 .speaker_meet_info{background:#0e1527;min-height:110px;}
 .speaker_meet_info img{display:block;float:left;width:100px;height:auto;}
-.speaker_meet_info span.title{display:block;float:left;line:height:27px;font-size:24px;color:#f69c22;padding:36px 0 0 40px;width:300px;}
-.speaker_meet_info span.position{display:block;float:left;line:height:18px;font-size:15px;color:#949494;padding:46px 0 0 25px;width:310px;}
+.speaker_meet_info span.title{display:block;float:left;line:height 27px;font-size:24px;color:#f69c22;padding:36px 0 0 40px;width:300px;}
+.speaker_meet_info span.position{display:block;float:left;line:height 18px;font-size:15px;color:#949494;padding:46px 0 0 25px;width:310px;}

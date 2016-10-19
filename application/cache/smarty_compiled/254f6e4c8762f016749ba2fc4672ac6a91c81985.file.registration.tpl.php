@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-17 18:18:44
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-19 20:54:46
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\account\registration.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5298580434a4839b49-62835723%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '254f6e4c8762f016749ba2fc4672ac6a91c81985' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\\\account\\registration.tpl',
-      1 => 1476706719,
+      1 => 1476786037,
       2 => 'file',
     ),
     'dabbea9ee3d7e0c1016ac6ddc356912b694f6d36' => 
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1454311920,
+      1 => 1476888821,
       2 => 'file',
     ),
   ),
@@ -41,6 +41,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <!--<html>-->
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+
+
+
     <title>Ярмарка проектов</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -100,8 +104,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <li class="sidebar-option"><a href="/"><div class="btm">Главная</div></a></li>
                     <!--  <li class="sidebar-option"><a href="<?php echo URL::site('titles');?>
 "><div class="btm">Спикеры</div></a></li> -->
-                    <li class="sidebar-option"><a href="<?php echo URL::site('sections');?>
-"> <div class="btm">Программа ярмарки</div></a></li>
+                   <!-- <li class="sidebar-option"><a href="<?php echo URL::site('sections');?>
+"> <div class="btm">Программа ярмарки</div></a></li> -->
                     <li class="sidebar-option"><a href="#"> <div class="btm">Проекты</div></a>
                         <ul  class="sub_menu" >
                             <li class="sidebar-option"><a href="<?php echo URL::site('ideas');?>
@@ -161,13 +165,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="content" id="text">
         <div class="col-md-12">
             
-    <script src="/assets/js/jquery.form.min.js" type="text/javascript"></script>
-    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/register.js" type="text/javascript"></script>
 
     <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
-    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+
 
     <h4>РЕГИСТРАЦИЯ ПОЛЬЗОВАТЕЛЯ</h4>
     <hr>
@@ -425,6 +425,11 @@ $_smarty_tpl->tpl_vars['tag']->_loop = true;
             <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
         </div>
     </form>
+
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/register.js" type="text/javascript"></script>
+    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
 
 
         </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-18 18:56:19
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-19 20:56:16
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\pages\ideas.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1395958042b78f17034-67149963%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1476777390,
+      1 => 1476888821,
       2 => 'file',
     ),
   ),
@@ -41,6 +41,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <!--<html>-->
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+
+
+
     <title>Ярмарка проектов</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

@@ -69,11 +69,12 @@ class Controller_Page extends Controller_Common {
     }
 
     /**
-     * Список вакансий от проектов
+     *------------------------------------------------------------------------- Список вакансий от проектов ----------------------------------------------------------------------------------------
      */
     function action_vacancies()
     {
         $view = View::factory('/pages/vacancies.tpl');
+        $tags = ORM::factory('Participant_Tag')->find_all();
         Helper_Common::init_roles($view);
 
         $user = Auth::instance()->get_user();
@@ -96,24 +97,45 @@ class Controller_Page extends Controller_Common {
 			}
 			$view
 				->set('has_applied', $has_applied);
-		}
+         }
 
         $has_invitations = false;
         if($user)
         {
             $invitations = $user->participant->invitations()->find_all()->as_array();
-            if(!empty($invitations))
-            {
+            if(!empty($invitations)) {
                 $has_invitations = true;
                 $view
                     ->set('invitations', $invitations);
+
             }
         }
 
+        //Поиск по вакансиям
+            if(isset($_GET))
+            {
+                if(isset($_GET['tags']))
+                {
+                    $count = count($vacancies);
+                    for ($vacancia = 0; $vacancia < $count; $vacancia++)
+                    {
+
+                        foreach ($_GET['tags'] as $tag)
+                        {
+                            if (stripos($vacancies[$vacancia]->description, $tag) == false)
+                            {
+                                unset($vacancies[$vacancia]);
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
         $view
             ->set('participant', $participant)
             ->set('vacancies', $vacancies)
-            ->set('has_invitations', $has_invitations);
+            ->set('has_invitations', $has_invitations)
+            ->set('tags', $tags);
 
         $this->response->body($view);
     }

@@ -10,7 +10,7 @@
         <hr>
         <p align="center"><b>Если вы – руководитель или участник проекта, и понимаете, что к вам в команду нужны люди, то вы можете в личном кабинете или при регистрации проекта написать вакансию, которая отобразится на этой страничке. Участники смогут увидеть эту вакансию и подать свою кандидатуру на рассмотрение, чтобы вы выбрали в свою команду лучшего участника.</b></p>
     <hr><br>
-        <form class="form_search" id="form_search" action="{url route='default' controller='page' action='ideas'}" method="GET">
+        <form class="form_search" id="form_search" action="{url route='default' controller='page' action='vacancies'}" method="GET">
 
             <label for="tags">Поиск идей по ключевым словам или описанию:</label>
             <div class="input-group col-md-12">
