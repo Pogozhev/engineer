@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-19 20:54:46
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-20 18:22:24
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\account\registration.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5298580434a4839b49-62835723%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '254f6e4c8762f016749ba2fc4672ac6a91c81985' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\\\account\\registration.tpl',
-      1 => 1476786037,
+      1 => 1476961814,
       2 => 'file',
     ),
     'dabbea9ee3d7e0c1016ac6ddc356912b694f6d36' => 
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1476888821,
+      1 => 1476962025,
       2 => 'file',
     ),
   ),
@@ -46,6 +46,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
     <title>Ярмарка проектов</title>
+    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -165,9 +166,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="content" id="text">
         <div class="col-md-12">
             
-
-    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
-
 
     <h4>РЕГИСТРАЦИЯ ПОЛЬЗОВАТЕЛЯ</h4>
     <hr>
@@ -405,7 +403,24 @@ $_smarty_tpl->tpl_vars['course']->_loop = true;
         </span>
         -->
 
-        <label for="tags">Выберите подходящие Вам компетенции или таланты (в крайнем случае, введите свои):</label>
+        <legend>Направление развития и личные качества и инетерсы*</legend>
+        <label for="participant_branches">Выберите сферу ваших интересов, а именно над проектом в какой(их) области(ях) знаний Вы хотите поработать в рамках Научной школы (в крайнем случае, введите свои):</label>
+        <div class="input-group col-md-12">
+            <select id="participant_branches" name="participant_branches" class="form-control">
+                <?php  $_smarty_tpl->tpl_vars['branch'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['branch']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['participant_branches']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['branch']->key => $_smarty_tpl->tpl_vars['branch']->value) {
+$_smarty_tpl->tpl_vars['branch']->_loop = true;
+?>
+                    <option value="<?php echo $_smarty_tpl->tpl_vars['branch']->value->id;?>
+"><?php echo $_smarty_tpl->tpl_vars['branch']->value->id;?>
+. <?php echo $_smarty_tpl->tpl_vars['branch']->value->title;?>
+</option>
+                <?php } ?>
+            </select>
+        </div>
+
+        <label for="tags">Выберите то, с чем Вы бы могли помочь в проекте(в крайнем случае, введите свои):</label>
         <div class="input-group col-md-12">
             <select id="tags" name="tags[]" class="form-control select2-input-tags" multiple="multiple">
                 <?php  $_smarty_tpl->tpl_vars['tag'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['tag']->_loop = false;
@@ -426,10 +441,6 @@ $_smarty_tpl->tpl_vars['tag']->_loop = true;
         </div>
     </form>
 
-    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/register.js" type="text/javascript"></script>
-    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
 
 
         </div>
@@ -528,6 +539,16 @@ $_smarty_tpl->tpl_vars['tag']->_loop = true;
         
 
     </footer>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/register.js" type="text/javascript"></script>
+    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/form.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/ideas.js" type="text/javascript"></script>
 
 </body>
 </html><?php }} ?>

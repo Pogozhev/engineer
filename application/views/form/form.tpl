@@ -73,9 +73,7 @@
         </div>
     </form>
 
-    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/form.js" type="text/javascript"></script>
+
 
 {/block}
 

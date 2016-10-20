@@ -7,6 +7,7 @@
 
 
     <title>Ярмарка проектов</title>
+    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -72,9 +73,9 @@
                         </ul>
                     </li>
                     <li class="sidebar-option"><a href="{URL::site('projects')}"> <div class="btm">Проекты на IME</div></a></li>
-                    <li class="sidebar-option"><a href="{URL::site('vacancies')}"> <div class="btm">Вакансии</div></a></li>
+                    <!--<li class="sidebar-option"><a href="{URL::site('vacancies')}"> <div class="btm">Вакансии</div></a></li>
                     <li class="sidebar-option"><a href="{URL::site('experts')}"><div class="btm">Эксперты</div></a></li>
-                    <li class="sidebar-option"><a href="{URL::site('foto')}"><div class="btm">Галерея </div></a></li>
+                    <li class="sidebar-option"><a href="{URL::site('foto')}"><div class="btm">Галерея </div></a></li> -->
                     <li class="sidebar-option"><a href="{URL::site('about')}"><div class="last btm">О Ярмарке</div></a></li>
                 </ul>
             </div>
@@ -196,6 +197,16 @@
         {/literal}
 
     </footer>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/register.js" type="text/javascript"></script>
+    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/form.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/ideas.js" type="text/javascript"></script>
 
 </body>
 </html>

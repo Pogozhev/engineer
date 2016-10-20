@@ -30,7 +30,7 @@
 
 
     <div id="mainTable">
-        <br><br>
+       <!-- <br><br>
         <div class="regbtm">
             <ul class="nav nav-pills">
                 <li class="active"><a href="{url route='form'}"><h2>Регистрация на ярмарку</h2></a></li>
@@ -38,7 +38,7 @@
         </div>
 
         <br><br>
-        <!-- text   -->
+        <!-- text
         <p><a href="{URL::site('about')}">Ярмарка проектов</a>  – это ежегодное мероприятие, проходящее в рамках научной школы инженерного лидерства для студентов ЭТО, а также студентов, не обучающихся по данной траектории, но имеющих проект и желание его представить. </p>
         Цели Ярмарки:
         <ul>
@@ -58,7 +58,7 @@
 
         <table>
             <tr>
-                <!-- info student -->
+                <!-- info student
                 <div class="tab-content">
                     <ul class="nav nav-tabs">
                         <li class="active"> <a data-toggle="tab" href="#panel1"> 1 Курс</a></li>
@@ -102,7 +102,7 @@
 
             </tr>
             <tr>
-                <!-- VK Widget -->
+                <!-- VK Widget
                 {literal}
 
                     <script type="text/javascript" src="//vk.com/js/api/openapi.js?117"></script>
@@ -114,7 +114,7 @@
                 {/literal}
             </tr>
 
-        </table>
+        </table> -->
 
 
     </div>

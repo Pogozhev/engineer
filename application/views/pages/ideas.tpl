@@ -2,9 +2,6 @@
 
 {block 'content'}
 
-
-    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
-
     <h4>БАНК ИДЕЙ</h4>
     <p> – это сборник идей студентов, которые так и не реализовались.
         Если у вас нет идеи, то вы можете позаимствовать ее отсюда.
@@ -145,11 +142,5 @@
             </div>
         {/if}
     {/foreach}
-
-
-    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/ideas.js" type="text/javascript"></script>
-    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
 
 {/block}

@@ -3,9 +3,6 @@
 
 {block 'content'}
 
-    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
-
-
     <h4>РЕГИСТРАЦИЯ ПОЛЬЗОВАТЕЛЯ</h4>
     <hr>
 
@@ -236,7 +233,17 @@
         </span>
         -->
 
-        <label for="tags">Выберите подходящие Вам компетенции или таланты (в крайнем случае, введите свои):</label>
+        <legend>Направление развития и личные качества и инетерсы*</legend>
+        <label for="participant_branches">Выберите сферу ваших интересов, а именно над проектом в какой(их) области(ях) знаний Вы хотите поработать в рамках Научной школы (в крайнем случае, введите свои):</label>
+        <div class="input-group col-md-12">
+            <select id="participant_branches" name="participant_branches" class="form-control">
+                {foreach $participant_branches as $branch}
+                    <option value="{$branch->id}">{$branch->id}. {$branch->title}</option>
+                {/foreach}
+            </select>
+        </div>
+
+        <label for="tags">Выберите то, с чем Вы бы могли помочь в проекте(в крайнем случае, введите свои):</label>
         <div class="input-group col-md-12">
             <select id="tags" name="tags[]" class="form-control select2-input-tags" multiple="multiple">
                 {foreach $tags as $tag}
@@ -251,10 +258,6 @@
         </div>
     </form>
 
-    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/register.js" type="text/javascript"></script>
-    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
 
 {/block}
 

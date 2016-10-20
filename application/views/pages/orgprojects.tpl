@@ -1,7 +1,6 @@
 ﻿{extends 'theme/sponsors.tpl'}
 
 {block 'content'}
-    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
 
     <h4>ПРОЕКТЫ ОТ ПРЕДПРИЯТИЙ</h4>
     <p>
@@ -31,11 +30,5 @@
             </div>
         </div>
     {/foreach}
-
-
-    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/ideas.js" type="text/javascript"></script>
-    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
 
 {/block}

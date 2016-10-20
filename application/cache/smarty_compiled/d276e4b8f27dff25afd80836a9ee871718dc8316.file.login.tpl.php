@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-19 19:47:46
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-20 18:22:33
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\account\login.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:44615804396e2133c7-25864254%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1476882271,
+      1 => 1476962025,
       2 => 'file',
     ),
   ),
@@ -35,34 +35,45 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <!--<html>-->
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
 
-    <script>
-        WebFont.load({
-            custom: {
-                families: ['Sunday']
-            }
-        });
-    </script>
+
 
     <title>Ярмарка проектов</title>
+    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/assets/css/main.css" rel="stylesheet" media="screen">
 
+    <script src="/assets/lib/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/assets/js/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="/assets/js/main.js" type="text/javascript"></script>
+    <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
 
     <!-- Выпадающее меню (Потребовался для программы) -->
     <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen, projection"/>
     <link href="/assets/css/ie.css" type="text/css" rel="stylesheet" media="screen">
 
+    <script type="text/javascript" src="/assets/js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap-carousel.js"></script>
+    <script type="text/javascript" language="javascript" src="/assets/js/jquery.dropdownPlain.js"></script>
+
     <!-- Owl Carousel и Nested (Потребовался для программы) -->
     <link rel="stylesheet" href="/assets/plugins/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="/assets/plugins/owl-carousel/owl.theme.css">
 
+    <script src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="/assets/plugins/nested/jquery.nested.js"></script>
+    <script src="/assets/plugins/nested/makeboxes.js"></script>
+
     <!-- FOTO -->
     <link rel="stylesheet" type="text/css" href="/assets/js/fancybox/jquery.fancybox-1.3.4.css"/>
+    <script type="text/javascript" src="/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="/assets/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="/assets/js/fancybox/jquery.easing-1.3.pack.js"></script>
 
-     <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="keywords" content="html5, responsive, image gallery, masonry, picture, images, sizes, fluid, history api, visibility api"/>
      <meta name="author" content="Codrops"/>
@@ -279,26 +290,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         
 
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
-
-    <!-- FOTO -->
-    <script type="text/javascript" src="/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-    <script type="text/javascript" src="/assets/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-    <script type="text/javascript" src="/assets/js/fancybox/jquery.easing-1.3.pack.js"></script>
-
-    <script src="/assets/lib/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/assets/js/jquery.maskedinput.min.js" type="text/javascript"></script>
-    <script src="/assets/js/main.js" type="text/javascript"></script>
-    <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
-
-    <script src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
-    <script src="/assets/plugins/nested/jquery.nested.js"></script>
-    <script src="/assets/plugins/nested/makeboxes.js"></script>
-
-    <script type="text/javascript" src="/assets/js/bootstrap-dropdown.js"></script>
-    <script type="text/javascript" src="/assets/js/bootstrap-carousel.js"></script>
-    <script type="text/javascript" language="javascript" src="/assets/js/jquery.dropdownPlain.js"></script>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/register.js" type="text/javascript"></script>
+    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/form.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/ideas.js" type="text/javascript"></script>
 
 </body>
 </html><?php }} ?>

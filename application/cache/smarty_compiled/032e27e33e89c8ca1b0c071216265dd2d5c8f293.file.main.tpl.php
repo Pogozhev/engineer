@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-19 20:55:36
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-20 18:57:00
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\pages\main.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2341958042a771a6100-26133902%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '032e27e33e89c8ca1b0c071216265dd2d5c8f293' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\\\pages\\main.tpl',
-      1 => 1454256300,
+      1 => 1476968215,
       2 => 'file',
     ),
     'dabbea9ee3d7e0c1016ac6ddc356912b694f6d36' => 
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1476888821,
+      1 => 1476968215,
       2 => 'file',
     ),
   ),
@@ -46,6 +46,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
     <title>Ярмарка проектов</title>
+    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -116,12 +117,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('projects');?>
 "> <div class="btm">Проекты на IME</div></a></li>
-                    <li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
+                    <!--<li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
 "> <div class="btm">Вакансии</div></a></li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('experts');?>
 "><div class="btm">Эксперты</div></a></li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('foto');?>
-"><div class="btm">Галерея </div></a></li>
+"><div class="btm">Галерея </div></a></li> -->
                     <li class="sidebar-option"><a href="<?php echo URL::site('about');?>
 "><div class="last btm">О Ярмарке</div></a></li>
                 </ul>
@@ -194,7 +195,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
     <div id="mainTable">
-        <br><br>
+       <!-- <br><br>
         <div class="regbtm">
             <ul class="nav nav-pills">
                 <li class="active"><a href="<?php echo smarty_function_url(array('route'=>'form'),$_smarty_tpl);?>
@@ -203,7 +204,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </div>
 
         <br><br>
-        <!-- text   -->
+        <!-- text
         <p><a href="<?php echo URL::site('about');?>
 ">Ярмарка проектов</a>  – это ежегодное мероприятие, проходящее в рамках научной школы инженерного лидерства для студентов ЭТО, а также студентов, не обучающихся по данной траектории, но имеющих проект и желание его представить. </p>
         Цели Ярмарки:
@@ -225,7 +226,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
         <table>
             <tr>
-                <!-- info student -->
+                <!-- info student
                 <div class="tab-content">
                     <ul class="nav nav-tabs">
                         <li class="active"> <a data-toggle="tab" href="#panel1"> 1 Курс</a></li>
@@ -269,7 +270,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
             </tr>
             <tr>
-                <!-- VK Widget -->
+                <!-- VK Widget
                 
 
                     <script type="text/javascript" src="//vk.com/js/api/openapi.js?117"></script>
@@ -281,7 +282,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 
             </tr>
 
-        </table>
+        </table> -->
 
 
     </div>
@@ -384,6 +385,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         
 
     </footer>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/register.js" type="text/javascript"></script>
+    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/form.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/ideas.js" type="text/javascript"></script>
 
 </body>
 </html><?php }} ?>

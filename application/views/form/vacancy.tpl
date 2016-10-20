@@ -1,4 +1,3 @@
-<link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
 <div class="collapse vacancy" data-id="vid">
     <h4>
         &#10149; Вакансия
@@ -26,6 +25,7 @@
     </div>
 
     <label for="tags">Подберите категории/ключевые слова к вакансии (или введите свои):</label>
+
     <div class="input-group col-md-12">
         <select id="tags" name="tags[]" class="form-control select2-input-tags" multiple="multiple">
             {foreach $tags as $tag}
@@ -35,10 +35,8 @@
     </div>
 </div>
 
-<script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-<script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-<script src="/assets/js/register.js" type="text/javascript"></script>
-<script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+
+
 
 
 

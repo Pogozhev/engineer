@@ -34,6 +34,10 @@ class Model_Participant extends ORM {
             'model'       => 'User',
             'foreign_key' => 'user_id',
         ),
+        'participant_branches' => array(
+            'model'       => 'participant_branch',
+            'foreign_key' => 'participant_branch_id',
+        ),
     );
 
     public function invitations()

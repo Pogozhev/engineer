@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-17 08:22:48
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-20 16:40:27
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\account\registered.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20700580435f809aa45-61883870%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1454311920,
+      1 => 1476888821,
       2 => 'file',
     ),
   ),
@@ -27,20 +27,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_580435f818d0d2_49616799',
   'variables' => 
   array (
     'user' => 0,
     'is_admin' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_580435f818d0d2_49616799',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_580435f818d0d2_49616799')) {function content_580435f818d0d2_49616799($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include 'C:\\OpenServer\\domains\\techconf.tomsk\\modules\\smarty3\\vendor\\smarty\\libs\\plugins\\function.url.php';
 ?>﻿<!DOCTYPE html>
 <!--<html>-->
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+
+
+
     <title>Ярмарка проектов</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -100,8 +104,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <li class="sidebar-option"><a href="/"><div class="btm">Главная</div></a></li>
                     <!--  <li class="sidebar-option"><a href="<?php echo URL::site('titles');?>
 "><div class="btm">Спикеры</div></a></li> -->
-                    <li class="sidebar-option"><a href="<?php echo URL::site('sections');?>
-"> <div class="btm">Программа ярмарки</div></a></li>
+                   <!-- <li class="sidebar-option"><a href="<?php echo URL::site('sections');?>
+"> <div class="btm">Программа ярмарки</div></a></li> -->
                     <li class="sidebar-option"><a href="#"> <div class="btm">Проекты</div></a>
                         <ul  class="sub_menu" >
                             <li class="sidebar-option"><a href="<?php echo URL::site('ideas');?>

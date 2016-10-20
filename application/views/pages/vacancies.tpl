@@ -2,7 +2,6 @@
 
 {block 'content'}
 
-    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
     {include 'pages/includes/invitations.tpl'}
 
     <div class="col-md-12">
@@ -62,9 +61,4 @@
             {/if}
         {/foreach}
     </div>
-
-    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/ideas.js" type="text/javascript"></script>
-    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
 {/block}

@@ -21,12 +21,14 @@ class Controller_Account extends Controller_Common {
         $view = View::factory('/account/registration.tpl');
         Helper_Common::init_roles($view);
 
-        $branches = ORM::factory('Branch')->find_all();
+        /*$branches = ORM::factory('Branch')->find_all()*/;
         $courses = ORM::factory('Course')->find_all();
         $tags = ORM::factory('Participant_Tag')->find_all();
+        $participant_branches = ORM::factory('Participant_Branch')->find_all();
 
         $view
-            ->set('branches', $branches)
+            ->set('participant_branches', $participant_branches)
+            /*->set('branches', $branches)*/
             ->set('courses', $courses)
             ->set('tags', $tags);
 
@@ -85,6 +87,7 @@ class Controller_Account extends Controller_Common {
 
             //Записываем объект участника
             $tags = '';
+            $participant_branches = ORM::factory('Participant_Branch')->find_all();
             foreach($post['tags'] as $tag) $tags = $tags . $tag . ', ';
             $participant = ORM::factory('Participant')
                 ->set('user_id', $user->id)
@@ -98,6 +101,7 @@ class Controller_Account extends Controller_Common {
                 ->set('is_university', $post['is_university'])
                 /*->set('competences', $post['competences'])
                 ->set('interests', $post['interests'])*/
+                ->set('participant_branch_id', $post['participant_branches'])
                 ->set('tags', $tags)
                 ->save();
 
