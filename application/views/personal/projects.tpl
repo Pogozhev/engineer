@@ -17,7 +17,7 @@
         <h4>МОИ ПРОЕКТЫ</h4>
         <hr>
         <p>Пока регистрация закрыта</p>
-        <!--<a href="{url route='form'}" class="btn btn-primary">ЗАРЕГИСТРИРОВАТЬ НОВЫЙ ПРОЕКТ</a>-->
+        <a href="{url route='form'}" class="btn btn-primary">ЗАРЕГИСТРИРОВАТЬ НОВЫЙ ПРОЕКТ</a>
         <br><br>
         {$i = 1}
         {foreach $projects as $pid => $project}

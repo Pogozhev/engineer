@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-20 18:51:57
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-21 17:55:51
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\personal\projects.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:25451580435fe3b9541-12262151%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '29febc707a1c1b2bcea583517c9001e1d604ffdc' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\\\personal\\projects.tpl',
-      1 => 1476967763,
+      1 => 1477050950,
       2 => 'file',
     ),
     'dabbea9ee3d7e0c1016ac6ddc356912b694f6d36' => 
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1476967916,
+      1 => 1476968215,
       2 => 'file',
     ),
     '66743d4eb1945f96fc3179df4db79a2f83fa0830' => 
@@ -123,9 +123,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('projects');?>
 "> <div class="btm">Проекты на IME</div></a></li>
-                    <li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
+                    <!--<li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
 "> <div class="btm">Вакансии</div></a></li>
-                    <!--<li class="sidebar-option"><a href="<?php echo URL::site('experts');?>
+                    <li class="sidebar-option"><a href="<?php echo URL::site('experts');?>
 "><div class="btm">Эксперты</div></a></li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('foto');?>
 "><div class="btm">Галерея </div></a></li> -->
@@ -187,7 +187,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <?php /*  Call merged included template "pages/includes/invitations.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('pages/includes/invitations.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '25451580435fe3b9541-12262151');
-content_5808bdedc4a5f4_31230418($_smarty_tpl);
+content_580a0248309f53_25100539($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "pages/includes/invitations.tpl" */?>
 
@@ -195,8 +195,8 @@ $_smarty_tpl = array_pop($_tpl_stack);
         <h4>МОИ ПРОЕКТЫ</h4>
         <hr>
         <p>Пока регистрация закрыта</p>
-        <!--<a href="<?php echo smarty_function_url(array('route'=>'form'),$_smarty_tpl);?>
-" class="btn btn-primary">ЗАРЕГИСТРИРОВАТЬ НОВЫЙ ПРОЕКТ</a>-->
+        <a href="<?php echo smarty_function_url(array('route'=>'form'),$_smarty_tpl);?>
+" class="btn btn-primary">ЗАРЕГИСТРИРОВАТЬ НОВЫЙ ПРОЕКТ</a>
         <br><br>
         <?php $_smarty_tpl->tpl_vars['i'] = new Smarty_variable(1, null, 0);?>
         <?php  $_smarty_tpl->tpl_vars['project'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['project']->_loop = false;
@@ -572,9 +572,9 @@ $_smarty_tpl->tpl_vars['a_participant']->_loop = true;
 
 </body>
 </html><?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-20 18:51:57
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-21 17:55:52
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\pages\includes\invitations.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5808bdedc4a5f4_31230418')) {function content_5808bdedc4a5f4_31230418($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['has_invitations']->value) {?>
+<?php if ($_valid && !is_callable('content_580a0248309f53_25100539')) {function content_580a0248309f53_25100539($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['has_invitations']->value) {?>
     <div class="col-md-12">
         <h4>Вы получили приглашение в проекты:</h4>
         <hr>

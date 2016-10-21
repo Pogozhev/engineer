@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-20 18:22:33
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-21 14:30:42
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\account\login.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:44615804396e2133c7-25864254%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1476962025,
+      1 => 1476968215,
       2 => 'file',
     ),
   ),
@@ -111,12 +111,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('projects');?>
 "> <div class="btm">Проекты на IME</div></a></li>
-                    <li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
+                    <!--<li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
 "> <div class="btm">Вакансии</div></a></li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('experts');?>
 "><div class="btm">Эксперты</div></a></li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('foto');?>
-"><div class="btm">Галерея </div></a></li>
+"><div class="btm">Галерея </div></a></li> -->
                     <li class="sidebar-option"><a href="<?php echo URL::site('about');?>
 "><div class="last btm">О Ярмарке</div></a></li>
                 </ul>

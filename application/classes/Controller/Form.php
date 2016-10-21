@@ -80,17 +80,13 @@ class Controller_Form extends Controller_Common {
             {
                 if($k != 'vid') //Убедимся, что не заносим в БД шаблон
                 {
-                    foreach($post['tags'] as $tag)
-                    {
-                        if(substr($tag, 0, 1) != "#")
-                            $tag = "#" . $tag;
-                        $post['description'] = $post['description'] . " " . $tag;
-                    }
+                    $tags = ORM::factory('Participant_Tag')->find_all();
 
                     $vacancy = ORM::factory('Vacancy')
                         ->set('title', $post['vacancy_title'][$k])
                         ->set('description', $post['vacancy_description'][$k])
                         ->set('project_id', $project->id)
+                        ->set('tags', $tags)
                         ->save();
                 }
             }

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-20 18:38:14
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-21 17:56:00
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\form\form.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:326045804362a5a5013-57818607%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1476962025,
+      1 => 1476968215,
       2 => 'file',
     ),
     'd06d2527f87a203ca6ab1fc0c256e607fb8c2b6b' => 
@@ -129,12 +129,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('projects');?>
 "> <div class="btm">Проекты на IME</div></a></li>
-                    <li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
+                    <!--<li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
 "> <div class="btm">Вакансии</div></a></li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('experts');?>
 "><div class="btm">Эксперты</div></a></li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('foto');?>
-"><div class="btm">Галерея </div></a></li>
+"><div class="btm">Галерея </div></a></li> -->
                     <li class="sidebar-option"><a href="<?php echo URL::site('about');?>
 "><div class="last btm">О Ярмарке</div></a></li>
                 </ul>
@@ -234,7 +234,7 @@ $_smarty_tpl->tpl_vars['branch']->_loop = true;
             <?php /*  Call merged included template "form/invitation.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('form/invitation.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '326045804362a5a5013-57818607');
-content_5808bab69b7564_70409800($_smarty_tpl);
+content_580a0250cb9792_71107796($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "form/invitation.tpl" */?>
         </div>
@@ -255,7 +255,7 @@ $_smarty_tpl = array_pop($_tpl_stack);
             <?php /*  Call merged included template "form/vacancy.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('form/vacancy.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '326045804362a5a5013-57818607');
-content_5808bab69c5a08_92569069($_smarty_tpl);
+content_580a0250d0be77_04528177($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "form/vacancy.tpl" */?>
         </div>
@@ -379,9 +379,9 @@ $_smarty_tpl = array_pop($_tpl_stack);
 
 </body>
 </html><?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-20 18:38:14
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-21 17:56:00
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\form\invitation.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5808bab69b7564_70409800')) {function content_5808bab69b7564_70409800($_smarty_tpl) {?><div class="collapse author" data-id="myid">
+<?php if ($_valid && !is_callable('content_580a0250cb9792_71107796')) {function content_580a0250cb9792_71107796($_smarty_tpl) {?><div class="collapse author" data-id="myid">
     <h4>&#10149; Предполагаемый участник <button type="button" class="btn-xs btn-success add_author[myid]" style="margin-bottom: 7px">Добавить приглашение</button></h4>
 
     <div class="input-group col-md-12">
@@ -412,9 +412,9 @@ $_smarty_tpl = array_pop($_tpl_stack);
 
 
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-20 18:38:14
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-21 17:56:00
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\form\vacancy.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5808bab69c5a08_92569069')) {function content_5808bab69c5a08_92569069($_smarty_tpl) {?><div class="collapse vacancy" data-id="vid">
+<?php if ($_valid && !is_callable('content_580a0250d0be77_04528177')) {function content_580a0250d0be77_04528177($_smarty_tpl) {?><div class="collapse vacancy" data-id="vid">
     <h4>
         &#10149; Вакансия
         <button type="button" class="btn-xs btn-success add_vacancy[vid] addb" style="margin-bottom: 7px">Добавить вакансию</button>
