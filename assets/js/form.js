@@ -1,6 +1,5 @@
 $(document).ready(function($) {
-
-    //Валидация формы команды
+   //Валидация формы команды
     var validatorOptions = {
         rules: {
             project_title: "required",
@@ -173,5 +172,8 @@ $(document).ready(function($) {
             }
         });
     });
+
+
+
 });
 

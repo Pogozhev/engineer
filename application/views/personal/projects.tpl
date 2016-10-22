@@ -210,6 +210,16 @@
                                         <textarea id="vacancy_description" name="vacancy_description" class="form-control val-required"></textarea>
                                     </div>
 
+                                    <label for="tags">Подберите категории/ключевые слова к вакансии (или введите свои):</label>
+
+                                    <div class="input-group col-md-12">
+                                        <select id="tags" name="tags[]" class="form-control select2-input-tags" multiple="multiple">
+                                            {foreach $tags as $tag}
+                                                <option value="{$tag->name}">{$tag->name}</option>
+                                            {/foreach}
+                                        </select>
+                                    </div>
+
                                     <div class="input-group col-md-12">
                                         <button type="submit" class="btn-xs btn-primary">Добавить вакансию</button>
                                     </div>

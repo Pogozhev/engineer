@@ -258,6 +258,7 @@
         </div>
     </form>
 
+    <script src="/assets/js/register.js" type="text/javascript"></script>
 
 {/block}
 

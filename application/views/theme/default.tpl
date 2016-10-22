@@ -12,7 +12,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/assets/css/main.css" rel="stylesheet" media="screen">
-
+    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
     <script src="/assets/lib/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="/assets/js/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="/assets/js/main.js" type="text/javascript"></script>
@@ -199,11 +199,11 @@
     </footer>
     <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/register.js" type="text/javascript"></script>
+
     <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
     <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/form.js" type="text/javascript"></script>
+
     <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
     <script src="/assets/js/ideas.js" type="text/javascript"></script>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-18 15:38:54
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-22 19:33:04
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\form\registered.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:131795805edaea04fa6-85038600%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1476777390,
+      1 => 1477142067,
       2 => 'file',
     ),
   ),
@@ -27,26 +27,31 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.18',
+  'unifunc' => 'content_5805edaea97825_62185112',
   'variables' => 
   array (
     'user' => 0,
     'is_admin' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_5805edaea97825_62185112',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5805edaea97825_62185112')) {function content_5805edaea97825_62185112($_smarty_tpl) {?><?php if (!is_callable('smarty_function_url')) include 'C:\\OpenServer\\domains\\techconf.tomsk\\modules\\smarty3\\vendor\\smarty\\libs\\plugins\\function.url.php';
 ?>﻿<!DOCTYPE html>
 <!--<html>-->
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+
+
+
     <title>Ярмарка проектов</title>
+    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/assets/css/main.css" rel="stylesheet" media="screen">
-
+    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
     <script src="/assets/lib/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="/assets/js/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="/assets/js/main.js" type="text/javascript"></script>
@@ -112,12 +117,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('projects');?>
 "> <div class="btm">Проекты на IME</div></a></li>
-                    <li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
+                    <!--<li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
 "> <div class="btm">Вакансии</div></a></li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('experts');?>
 "><div class="btm">Эксперты</div></a></li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('foto');?>
-"><div class="btm">Галерея </div></a></li>
+"><div class="btm">Галерея </div></a></li> -->
                     <li class="sidebar-option"><a href="<?php echo URL::site('about');?>
 "><div class="last btm">О Ярмарке</div></a></li>
                 </ul>
@@ -262,6 +267,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         
 
     </footer>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+
+    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/js/ideas.js" type="text/javascript"></script>
 
 </body>
 </html><?php }} ?>

@@ -73,7 +73,7 @@
         </div>
     </form>
 
-
+    <script src="/assets/js/form.js" type="text/javascript"></script>
 
 {/block}
 

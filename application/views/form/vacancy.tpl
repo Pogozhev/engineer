@@ -1,5 +1,6 @@
 <div class="collapse vacancy" data-id="vid">
-    <h4>
+    <script src="/assets/js/vacancy.js" type="text/javascript"></script>
+     <h4>
         &#10149; Вакансия
         <button type="button" class="btn-xs btn-success add_vacancy[vid] addb" style="margin-bottom: 7px">Добавить вакансию</button>
     </h4>
@@ -19,6 +20,7 @@
         </div>
 
     </div>
+
     <div class="input-group col-md-12">
         <label class="col-md-12" for="vacancy_description[vid]">Описание вакансии*</label>
         <textarea id="vacancy_description[vid]" name="vacancy_description[vid]" class="form-control val-required"></textarea>
@@ -33,6 +35,9 @@
             {/foreach}
         </select>
     </div>
+
+
+
 </div>
 
 

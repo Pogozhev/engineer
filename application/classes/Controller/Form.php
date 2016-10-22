@@ -30,8 +30,6 @@ class Controller_Form extends Controller_Common {
      */
     public function action_saveproject()
     {
-
-
         if (HTTP_Request::POST == $this->request->method())
         {
             $post = $_POST;
@@ -80,8 +78,8 @@ class Controller_Form extends Controller_Common {
             {
                 if($k != 'vid') //Убедимся, что не заносим в БД шаблон
                 {
-                    $tags = ORM::factory('Participant_Tag')->find_all();
-
+                    $tags = '';
+                    foreach($post['tags'] as $tag) $tags = $tags . $tag . ', ';
                     $vacancy = ORM::factory('Vacancy')
                         ->set('title', $post['vacancy_title'][$k])
                         ->set('description', $post['vacancy_description'][$k])
@@ -139,15 +137,11 @@ class Controller_Form extends Controller_Common {
     public function action_vacancy_apply()
     {
         $user = Auth::instance()->get_user();
-        $tags = ORM::factory('Idea_Tag')->find_all();
-
         $vacancy_id = $this->request->query('vacancy_id');
         $application = ORM::factory('Vacancy_Application')
             ->set('participant_id', $user->participant->id)
             ->set('vacancy_id', $vacancy_id)
             ->save();
-
-
 
         $this->redirect($this->request->referrer());
     }
