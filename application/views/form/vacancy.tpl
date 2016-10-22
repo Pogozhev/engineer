@@ -1,5 +1,5 @@
 <div class="collapse vacancy" data-id="vid">
-    <script src="/assets/js/vacancy.js" type="text/javascript"></script>
+
      <h4>
         &#10149; Вакансия
         <button type="button" class="btn-xs btn-success add_vacancy[vid] addb" style="margin-bottom: 7px">Добавить вакансию</button>
@@ -33,10 +33,10 @@
             {foreach $tags as $tag}
                 <option value="{$tag->name}">{$tag->name}</option>
             {/foreach}
-        </select>
+         </select>
     </div>
 
-
+    <script src="/assets/js/vacancy.js" type="text/javascript"></script>
 
 </div>
 

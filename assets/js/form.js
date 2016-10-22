@@ -120,8 +120,22 @@ $(document).ready(function($) {
         tmp.html(tmp.html().replace(/vid/g, vacanciesCount));
         var newVacancy = tmp.children().clone().appendTo(vacancies);
         newVacancy.slideDown().css('width', '100%');
-
         initializeCurrentVacancy(vacanciesCount);
+        $(".select2-input-tags").select2({
+            tags: true
+        });
+        $(".select2-input-tags").select2({
+            tags: true
+        });
+        $(".select2-input-tags").select2({
+            tags: true
+        });
+        $(".select2-input-tags").select2({
+            tags: true
+        });
+        $(".select2-input-tags").select2({
+            tags: true
+        });
     }
 
     function initializeCurrentVacancy(vacanciesCount)
@@ -134,6 +148,7 @@ $(document).ready(function($) {
                     $(this).remove();
                 });
             }
+
         });
 
         $('.add_vacancy\\['+vacanciesCount+'\\]').each(function() {
@@ -158,6 +173,7 @@ $(document).ready(function($) {
                 vacanciesCurrent++;
                 vacanciesAmount++;
                 addVacancy(vacanciesCurrent);
+
             }
         });
     });

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-22 19:30:52
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-22 20:39:46
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\form\form.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:326045804362a5a5013-57818607%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1477142067,
+      1 => 1477146470,
       2 => 'file',
     ),
     'd06d2527f87a203ca6ab1fc0c256e607fb8c2b6b' => 
@@ -31,7 +31,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3862fa522aafba53580cc8b6bfa36283381349ba' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\form\\vacancy.tpl',
-      1 => 1477143049,
+      1 => 1477147184,
       2 => 'file',
     ),
   ),
@@ -234,7 +234,7 @@ $_smarty_tpl->tpl_vars['branch']->_loop = true;
             <?php /*  Call merged included template "form/invitation.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('form/invitation.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '326045804362a5a5013-57818607');
-content_580b6a0c0bfe95_34542603($_smarty_tpl);
+content_580b7a325c1c27_70199344($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "form/invitation.tpl" */?>
         </div>
@@ -255,7 +255,7 @@ $_smarty_tpl = array_pop($_tpl_stack);
             <?php /*  Call merged included template "form/vacancy.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('form/vacancy.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '326045804362a5a5013-57818607');
-content_580b6a0c0c4f35_46067675($_smarty_tpl);
+content_580b7a325c7dd9_08115456($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "form/vacancy.tpl" */?>
         </div>
@@ -379,9 +379,9 @@ $_smarty_tpl = array_pop($_tpl_stack);
 
 </body>
 </html><?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-22 19:30:52
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-22 20:39:46
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\form\invitation.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_580b6a0c0bfe95_34542603')) {function content_580b6a0c0bfe95_34542603($_smarty_tpl) {?><div class="collapse author" data-id="myid">
+<?php if ($_valid && !is_callable('content_580b7a325c1c27_70199344')) {function content_580b7a325c1c27_70199344($_smarty_tpl) {?><div class="collapse author" data-id="myid">
     <h4>&#10149; Предполагаемый участник <button type="button" class="btn-xs btn-success add_author[myid]" style="margin-bottom: 7px">Добавить приглашение</button></h4>
 
     <div class="input-group col-md-12">
@@ -412,10 +412,10 @@ $_smarty_tpl = array_pop($_tpl_stack);
 
 
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-22 19:30:52
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-22 20:39:46
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\form\vacancy.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_580b6a0c0c4f35_46067675')) {function content_580b6a0c0c4f35_46067675($_smarty_tpl) {?><div class="collapse vacancy" data-id="vid">
-    <script src="/assets/js/vacancy.js" type="text/javascript"></script>
+<?php if ($_valid && !is_callable('content_580b7a325c7dd9_08115456')) {function content_580b7a325c7dd9_08115456($_smarty_tpl) {?><div class="collapse vacancy" data-id="vid">
+
      <h4>
         &#10149; Вакансия
         <button type="button" class="btn-xs btn-success add_vacancy[vid] addb" style="margin-bottom: 7px">Добавить вакансию</button>
@@ -446,6 +446,7 @@ $_smarty_tpl = array_pop($_tpl_stack);
 
     <div class="input-group col-md-12">
         <select id="tags" name="tags[]" class="form-control select2-input-tags" multiple="multiple">
+            <label for="tags">Подберите категории/ключевые слова к вакансии (или введите свои):</label>
             <?php  $_smarty_tpl->tpl_vars['tag'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['tag']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['tags']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['tag']->key => $_smarty_tpl->tpl_vars['tag']->value) {
@@ -454,11 +455,13 @@ $_smarty_tpl->tpl_vars['tag']->_loop = true;
                 <option value="<?php echo $_smarty_tpl->tpl_vars['tag']->value->name;?>
 "><?php echo $_smarty_tpl->tpl_vars['tag']->value->name;?>
 </option>
+                <label for="tags">Подберите категории/ключевые слова к вакансии (или введите свои):</label>
             <?php } ?>
+            <label for="tags">Подберите категории/ключевые слова к вакансии (или введите свои):</label>
         </select>
     </div>
 
-
+    <script src="/assets/js/vacancy.js" type="text/javascript"></script>
 
 </div>
 

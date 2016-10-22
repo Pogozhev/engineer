@@ -27,6 +27,7 @@ class Controller_Team extends Controller_Common {
             ->set('title', $_POST['vacancy_title'])
             ->set('description', $_POST['vacancy_description'])
             ->set('project_id', $_POST['project_id'])
+            ->set('tags', $tags)
             ->save();
 
         $this->redirect($this->request->referrer());

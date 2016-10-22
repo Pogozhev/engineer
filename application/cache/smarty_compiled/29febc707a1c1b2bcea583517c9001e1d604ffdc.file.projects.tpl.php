@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-22 19:57:38
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-22 20:43:09
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\personal\projects.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:25451580435fe3b9541-12262151%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1477142067,
+      1 => 1477146470,
       2 => 'file',
     ),
     '66743d4eb1945f96fc3179df4db79a2f83fa0830' => 
@@ -187,7 +187,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <?php /*  Call merged included template "pages/includes/invitations.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
  $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('pages/includes/invitations.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '25451580435fe3b9541-12262151');
-content_580b70525c5324_29783622($_smarty_tpl);
+content_580b7afd871e51_87073430($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "pages/includes/invitations.tpl" */?>
 
@@ -588,9 +588,9 @@ $_smarty_tpl->tpl_vars['tag']->_loop = true;
 
 </body>
 </html><?php }} ?>
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-22 19:57:38
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-22 20:43:09
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\pages\includes\invitations.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_580b70525c5324_29783622')) {function content_580b70525c5324_29783622($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['has_invitations']->value) {?>
+<?php if ($_valid && !is_callable('content_580b7afd871e51_87073430')) {function content_580b7afd871e51_87073430($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['has_invitations']->value) {?>
     <div class="col-md-12">
         <h4>Вы получили приглашение в проекты:</h4>
         <hr>
