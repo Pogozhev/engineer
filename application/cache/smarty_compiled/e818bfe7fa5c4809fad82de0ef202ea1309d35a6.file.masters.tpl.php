@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-22 20:11:23
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-24 20:21:24
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\personal\masters.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19271580436014f0156-90685038%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1477142067,
+      1 => 1477308373,
       2 => 'file',
     ),
   ),
@@ -457,7 +457,7 @@ $_smarty_tpl->tpl_vars['master']->_loop = true;
 
     <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/ideas.js" type="text/javascript"></script>
+
 
 </body>
 </html><?php }} ?>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-20 18:52:12
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-25 03:55:21
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\pages\about.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:106358045ac8613414-51013580%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7c84420065a71c927af6c88f68587b34eb1029fe' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\\\pages\\about.tpl',
-      1 => 1454256300,
+      1 => 1477346114,
       2 => 'file',
     ),
     'dabbea9ee3d7e0c1016ac6ddc356912b694f6d36' => 
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1476967916,
+      1 => 1477344529,
       2 => 'file',
     ),
   ),
@@ -46,12 +46,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
     <title>Ярмарка проектов</title>
-    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/assets/css/main.css" rel="stylesheet" media="screen">
-
+    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
     <script src="/assets/lib/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="/assets/js/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="/assets/js/main.js" type="text/javascript"></script>
@@ -105,8 +105,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <li class="sidebar-option"><a href="/"><div class="btm">Главная</div></a></li>
                     <!--  <li class="sidebar-option"><a href="<?php echo URL::site('titles');?>
 "><div class="btm">Спикеры</div></a></li> -->
-                   <!-- <li class="sidebar-option"><a href="<?php echo URL::site('sections');?>
-"> <div class="btm">Программа ярмарки</div></a></li> -->
+                   <li class="sidebar-option"><a href="<?php echo URL::site('sections');?>
+"> <div class="btm">Программа ярмарки</div></a></li>
                     <li class="sidebar-option"><a href="#"> <div class="btm">Проекты</div></a>
                         <ul  class="sub_menu" >
                             <li class="sidebar-option"><a href="<?php echo URL::site('ideas');?>
@@ -117,12 +117,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('projects');?>
 "> <div class="btm">Проекты на IME</div></a></li>
-                    <li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
+                    <!--<li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
 "> <div class="btm">Вакансии</div></a></li>
-                    <!--<li class="sidebar-option"><a href="<?php echo URL::site('experts');?>
+                    <li class="sidebar-option"><a href="<?php echo URL::site('experts');?>
 "><div class="btm">Эксперты</div></a></li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('foto');?>
-"><div class="btm">Галерея </div></a></li> -->
+"><div class="btm">Галерея </div></a></li>-->
                     <li class="sidebar-option"><a href="<?php echo URL::site('about');?>
 "><div class="last btm">О Ярмарке</div></a></li>
                 </ul>
@@ -167,38 +167,37 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div class="col-md-12">
             
 
-<h4>О ЯРМАРКЕ</h4>
+<h4>Об IME</h4>
 <hr>
-<p>Ярмарка проектов – это ежегодное мероприятие, проходящее в рамках научной школы инженерного лидерства для студентов ЭТО, а также студентов, не обучающихся по данной траектории, но имеющих проект и желание его представить. </p>
+<p class="about"><b>Научная школа по инженерному изобретательству, проектированию и разработке инноваций «I am an engineer»</b> (или сокращенно <b>IME 2016</b>) Элитного технического образования – это ежегодное масштабное мероприятие для тех, кто хочет получить финансовую поддержку, оценку экспертов и вывести на новый уровень свой проект. </p>
 <br>
+<p class="about">Если у Вас есть проект / идея проекта / желание принять участие в разработке проекта, то Научная школа «I am an engineer» ждет Вас!</p>
 <br>
-<h5>Цели Ярмарки:</h5>
+<p class="about"><b>Внимание!</b> В рамках Научной школы будет проводиться конкурсный отбор проектов для акселератора молодежных технологических проектов для Национальной технологической инициативы (НТИ). Подробнее: <a href="http://news.tpu.ru/news/2016/09/09/25902/" target="_blank">http://news.tpu.ru/news</a></p>
+<br>
+<p class="about"><b>Цели Научной школы:</b><</p>
 <ul>
-<li> Помощь студентам в воплощении идей в реальность путем оформления их в грамотно составленный проект, готовый к реализации и участию в грантах </li>
+<li> Помощь участникам в воплощении идей в реальность путем оформления их в грамотно составленный проект, готовый к реализации и участию в грантах; </li>
 <li> Финансовая и ресурсная поддержка интересных и важных проектов различной направленности </li>
 <li> Погружение студентов в сферу проектной деятельности </li>
 <li> Обратная связь от экспертов, которая поможет студентам обратить внимание на сложности и понять перспективы развития</li>
 </ul>
 <br>
-<p>В этом году весь комплекс мероприятий объединен под названием «Научная школа по инженерному изобретательству, проектированию и разработке инноваций «I’m an engineer», или сокращенно IME_2015.</p>
-<br><h5>В комплекс мероприятий Школы входят:<h5>
+<br><p class="about"><b>В рамках Научной школы будут проходить следующие мероприятия:</b></p>
 <ul>
-<br><li> Мастер-классы, направленные на развитие практических навыков, важных для реализации проектов: пайка, программирование контроллеров, генерация идей, составление документации для получения гранта. </li>
-<br><li> Выставка проектов, уже реализованных элитниками ранее. В рамках выставки можно ознакомиться с идеями, получившими воплощение, узнать авторов успешных проектов, увидеть готовый продукт проектной деятельности на ЭТО.</li>
-<br><li> Ярмарка проектов. Это три дня интенсивной работы над созданием, редактированием и оформлением проектов, по окончанию которых Вы сможете презентовать свой результат и побороться с другими участниками за денежные призы: 10, 20 и 30 тысяч рублей, а также инициативные: толстовки, футболки, флешки, паяльная станция, шуруповерт и другие. Список будет пополняться вплоть до самого награждения (следить за списком призов можно в группе <a>http://vk.com/ime_2015</a>)</li>
+<br><li> Мастер-классы, направленные на развитие практических навыков, необходимых для реализации проектов;</li>
+<br><li> Презентация проектов, разрабатываемых в рамках Научной школы.</li>
+<br><li> Большая игра «Специалисты будущего»;</li>
+<br><li> Школа Нескучного Доклада;</li>
+<br><li> Инженерный кинопоказ;</li>
+<br><li> Большой Воркшоп НТИ;</li>
+<br><li> Тропа экспертов;</li>
+
+ <br><li> Хакатон;</li>
 </ul>
- <h5>Проекты, участвующие в ярмарке подразделены на 4 основных направления:<h5>
-<ul>
-<li> социальные </li>
-<li> инженерно-изобретательские </li>
-<li> научные </li>
-<li> IT сфера </li>
-</ul>
-<p>Разделение сделано специально, для того чтобы каждому из направлений мероприятие было максимально полезно. Все направления будут оцениваться отдельно друг от друга по своим критериям. 
-<br>Для научной сферы на ярмарке будет специально приглашенный гость – Максим Титов (подробнее о нем можно узнать в разделе ПРОГРАММА). В экспертный день будут приглашены такие эксперты, которые помогут оформить и разработать проект именно с точки зрения науки.
-<br><br>Для IT сферы мы пригласили компанию, которая может предоставить студентам производственную практику, темы для написания диплома и последующее место для работы. Описание компании так же можно будет найти на сайте в скором времени.
-<br><br>Для инженерных проектов разработаны специальные призы – такие, как паяльная станция, шуруповерт, прочие технически нужные вещи, которых часто не хватает студентам для воплощения проектов. Приглашены эксперты, уже прошедшие путь создания и реализации проекта, которые смогут поделиться своим опытом, уберечь от ошибок и дать ценные советы по реализации проектов.
-<br><br>Участники социально-направленных проектов получат уникальный опыт разработки идеи, превращения ее в рабочую проектную модель, представление проекта в выгодном свете.</p>
+<p class="about">Более подробную информацию о мероприятиях Научной школы, а также месте и времени проведения Вы можете узнать в разделе <b>Программа.</b></p>
+
+<p class="about"><b>Научная школа IME 2016</b> – это 6 дней интенсивной работы над созданием, редактированием и оформлением проектов, по окончанию которых Вы сможете презентовать свой результат и побороться с другими участниками за денежные призы (10000, 20000 и 30000 рублей), а также получить толстовки, футболки, флешки и другие памятные подарки.</p>
 
     
 
@@ -298,16 +297,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         
 
     </footer>
-    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+
     <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/register.js" type="text/javascript"></script>
     <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
     <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/form.js" type="text/javascript"></script>
-    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/ideas.js" type="text/javascript"></script>
+
+
 
 </body>
 </html><?php }} ?>

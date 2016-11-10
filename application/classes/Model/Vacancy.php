@@ -26,6 +26,6 @@ class Model_Vacancy extends ORM {
     public function get_amount()
     {
         return ORM::factory('Vacancy_Application', $this->pk())->count_all();
-        $tags = ORM::factory('Idea_Tag')->find_all();
+        
     }
 }

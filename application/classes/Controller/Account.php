@@ -87,8 +87,8 @@ class Controller_Account extends Controller_Common {
 
             //Записываем объект участника
             $tags = '';
-            $participant_branches = ORM::factory('Participant_Branch')->find_all();
             foreach($post['tags'] as $tag) $tags = $tags . $tag . ', ';
+            $participant_branches = ORM::factory('Participant_Branch')->find_all();
             $participant = ORM::factory('Participant')
                 ->set('user_id', $user->id)
                 ->set('last_name', $post['last_name'])

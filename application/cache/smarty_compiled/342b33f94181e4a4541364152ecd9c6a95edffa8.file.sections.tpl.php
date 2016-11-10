@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-18 13:26:33
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-25 03:28:53
          compiled from "C:\OpenServer\domains\techconf.tomsk\application\views\\pages\sections.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:30901580439a6742198-42712136%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '342b33f94181e4a4541364152ecd9c6a95edffa8' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\\\pages\\sections.tpl',
-      1 => 1476773650,
+      1 => 1477344506,
       2 => 'file',
     ),
     'dabbea9ee3d7e0c1016ac6ddc356912b694f6d36' => 
@@ -19,7 +19,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61133e2bf8560a226fcbdc5cb7967965cd88d551' => 
     array (
       0 => 'C:\\OpenServer\\domains\\techconf.tomsk\\application\\views\\theme\\default.tpl',
-      1 => 1454311920,
+      1 => 1477344529,
       2 => 'file',
     ),
   ),
@@ -41,12 +41,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <!--<html>-->
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+
+
+
     <title>Ярмарка проектов</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/assets/css/main.css" rel="stylesheet" media="screen">
-
+    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
     <script src="/assets/lib/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="/assets/js/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="/assets/js/main.js" type="text/javascript"></script>
@@ -100,7 +105,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <li class="sidebar-option"><a href="/"><div class="btm">Главная</div></a></li>
                     <!--  <li class="sidebar-option"><a href="<?php echo URL::site('titles');?>
 "><div class="btm">Спикеры</div></a></li> -->
-                    <li class="sidebar-option"><a href="<?php echo URL::site('sections');?>
+                   <li class="sidebar-option"><a href="<?php echo URL::site('sections');?>
 "> <div class="btm">Программа ярмарки</div></a></li>
                     <li class="sidebar-option"><a href="#"> <div class="btm">Проекты</div></a>
                         <ul  class="sub_menu" >
@@ -112,12 +117,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('projects');?>
 "> <div class="btm">Проекты на IME</div></a></li>
-                    <li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
+                    <!--<li class="sidebar-option"><a href="<?php echo URL::site('vacancies');?>
 "> <div class="btm">Вакансии</div></a></li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('experts');?>
 "><div class="btm">Эксперты</div></a></li>
                     <li class="sidebar-option"><a href="<?php echo URL::site('foto');?>
-"><div class="btm">Галерея </div></a></li>
+"><div class="btm">Галерея </div></a></li>-->
                     <li class="sidebar-option"><a href="<?php echo URL::site('about');?>
 "><div class="last btm">О Ярмарке</div></a></li>
                 </ul>
@@ -204,18 +209,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </div>
         </div>
       </li>
-/* _____________________________________________________________________________________________*/
+
+<!--_________________________________________________________________________________________________________________________________________________-->
 <h3><i class="fa fa-clock-o"></i> 11 ноября 2016 года</h3>
 <ul class="timetable-items">
       <li class="blue">
-        <div class="timetable-time">16:20<br>17:20</div>
+        <div class="timetable-time">16:20<br>17:00</div>
         <div class="timetable-body">
 
-            <div class="timetable-name"><span >Закрытая беседа с экспертом.
-Максим Титов, руководитель коллаборации RD51 CERN </span></div>
-            <div class="timetable-place"><b>Место проведения:</b> 105 ауд. 19к. </div>
-            <div class="timetable-place"> Максим Титов поговорит со студентами о том, кто такой настоящий ученый сегодня, как он может жить и каких вершин достигать. Где кроются истинные достижения в науке, как начать по-настоящему важную работу уже в ВУЗе и многое другое можно будет обсудить с экспертом, начавшим свой путь в физике на третьем курсе, и сейчас являющимся руководителем коллаборации ЦЕРН.
-Справка: Максим Титов работал в Институте теоретической и экспериментальной физики, в немецком исследовательском центре по физике частиц DESY, в Университете Фрайбурга (Германия), в Комиссариате атомной энергии Франции (CEA Saclay). С 2009 года – руководитель коллаборации RD51 CERN
+            <div class="timetable-name">Открытие школы «I’m engineer» </div>
+       <!--<div class="timetable-place"><b>Место проведения:</b> 105 ауд. 19к. </div> -->
+            <div class="timetable-place"> Открытие школы «I’m engineer». Итоги 2015 года, перспективы 2016 года. Что ждет нас на школе «I’m engineer».
 
                 <!--  <div class="timetable-body-more">
                       <p>
@@ -232,74 +236,194 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                   </div> -->
         </div>
       </li>
+    <li class="blue">
+        <div class="timetable-time">17:00<br>17:30 </div>
+        <div class="timetable-body">
 
-<h3><i class="fa fa-clock-o"></i> 14 ноября 2015 года</h3>
+            <div class="timetable-name">Кофе-брейк - Персональные консультации ученого совета школы </div>
+            <!--<div class="timetable-place"><b>Место проведения:</b> 105 ауд. 19 к.</div>-->
+        </div>
 
-       
+    </li>
 
-       <li class="blue">
-            <div class="timetable-time">10:00<br>13:00</div>
+    <li class="blue">
+        <div class="timetable-time">17:30<br>21:00 </div>
+        <div class="timetable-body">
+
+            <div class="timetable-name">Большая игра «Специалисты будущего» </div>
+            <!--<div class="timetable-place"><b>Место проведения:</b> 105 ауд. 19 к.</div>-->
+        </div>
+
+    </li>
+    </ul>
+
+    <!--_________________________________________________________________________________________________________________________________________________-->
+
+    <h3><i class="fa fa-clock-o"></i> 12 ноября 2016 года</h3>
+
+    <ul class="timetable-items">
+        <li class="blue">
+            <div class="timetable-time">14:30 <br> 19:10 </div>
             <div class="timetable-body">
 
-                <div class="timetable-name"><span>Программирование контроллеров группа №1</span></div>
-                <div class="timetable-place"><b>Место проведения:</b>105 ауд. 19 к. </div>
-		<div class="timetable-place"> Цель МК – получение базовых навыков работы в среде MexBIOS для программирования микроконтроллеров
-Студенты получат навыки – быстрой разработки программ для DSP микроконтроллеров
-Программа мастер-класса:
-<ul>
-	<li>Вводная часть - презентация</li>
-	<li>Изучение различных способов программирования в среде MBDS</li>
-	<li>Изучение способов программирование в среде</li>
-	<li>Изучение различных режимов работ</li>
-	<li>Создание системы управления силовой установкой лифта</li>
-	<li>Рассмотрение примера работы силовой установкой лифта</li>
-	<li>Создание собственной системы управления лифта</li>
-	<li>Создание системы управления двухкоординатным приводом</li>
-	<li>Изучение управления шаговым двигателем</li>
+                <div class="timetable-name">Проектирование от А до Я  </div>
+                <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+                <div class="timetable-place"> Что такое проект? Зачем они нам нужны? Чего мы не знаем о проектах? Чего нам не хватает? Как начать? Что делать дальше? Практикум в игровой форме.
+
+                </div>
+            </div>
+        </li>
+        <li class="blue">
+            <div class="timetable-time">14:30 <br> 19:10 </div>
+            <div class="timetable-body">
+
+                <div class="timetable-name">Как приручить паяльник?  </div>
+                <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+                <div class="timetable-place"> Приглашенные гости проведут мастер-класс по схемотехнике и пайке. Участники научатся собирать небольших роботов, которые останутся у них на память.</div>
+
+            </div>
+        </li>
+        <li class="blue">
+            <div class="timetable-time">14:30 <br> 18:00 </div>
+            <div class="timetable-body">
+
+                <div class="timetable-name">Хакатон: подготовка </div>
+                <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+                <div class="timetable-place"> Вводное занятие для желающих принять участие в мероприятии, которое по длительности занимает сутки и направлено на решение сложных инженерных задач.</div>
+            </div>
+        </li>
 </ul>
 
-                    
-                <div class="timetable-body-more">
-                    <p>Эти маленькие восхитительные комочки процессора и соединений, одни размером с рабочий стол, другие же не больше спичечного коробка – кто знает, что на самом деле они могут? Только те, кто самостоятельно программировал их хоть раз в жизни!  АЛУ, ЦПУ и ОЗУ, порты ввода и вывода, АЦП – даже если масса этих непонятных букв ни о чем тебе не говорит, ты все равно сможешь спрограммировать свой первый контроллер делать простейшие задачи! Ведь ничего не может быть проще работы на крутых схемах под руководством крутых мастеров. </p>
-                    <p><b>Ведущий: </b></p>
-                    <ul type="disc">
-                        <li>Киселев Алексей, кандидат технических наук  </li>
-<li><a href="http://mechatronica-pro.com" target="_blank">ООО "НПФ Мехатроника-Про"</a></li>
 
-                    </ul>
-                </div>
-            </div>
+<!--_________________________________________________________________________________________________________________________________________________-->
+                <h3><i class="fa fa-clock-o"></i> 13 ноября 2016 года</h3>
 
-        </li><li class="blue">
-            <div class="timetable-time">14:00<br>16:30</div>
+                <ul class="timetable-items">
+                    <li class="blue">
+                        <div class="timetable-time">12:00 <br> 16:50 </div>
+                        <div class="timetable-body">
+
+                            <div class="timetable-name">Школа Нескучного Доклада </div>
+                            <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+                            <div class="timetable-place"> Команда Science Slam расскажет об основах успешного выступления и покажет, как это выглядит на практике.</div>
+                        </div>
+
+                    </li>
+
+                    <li class="blue">
+                        <div class="timetable-time">13:00 <br> 16:50 </div>
+                        <div class="timetable-body">
+
+                            <div class="timetable-name">А вы еще не программируете микроконтроллеры?  </div>
+                            <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+                            <div class="timetable-place"> Один из самых необходимых навыков для современного инженера – умение программировать контроллеры. Здесь этому учат. </div>
+                        </div>
+                    </li>
+                    <li class="blue">
+                        <div class="timetable-time">15:00 <br> 16:50 </div>
+                        <div class="timetable-body">
+
+                            <div class="timetable-name">Хакатон: подготовка</div>
+                            <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+                            <div class="timetable-place">Второе вводное занятие для желающих принять участие в мероприятии, которое по длительности занимает сутки и направлено на решение сложных инженерных задач.</div>
+
+                        </div>
+                    </li>
+                    <li class="blue">
+                        <div class="timetable-time">17:00 <br> 19:00 </div>
+                        <div class="timetable-body">
+
+                            <div class="timetable-name">Инженерный кинопоказ</div>
+                            <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+                            <div class="timetable-place"> Просмотр актуального кино и совместное обсуждение.</div>
+                        </div>
+                    </li>
+                    <li class="blue">
+                        <div class="timetable-time">16:30 <br> 18:30 </div>
+                        <div class="timetable-body">
+
+                            <div class="timetable-name">Территория грантов или как не думать о деньгах</div>
+                            <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+                            <div class="timetable-place"> Где искать деньги на проект? Как решиться подать заявку? Практическое занятие в форме деловой игры.</div>
+                        </div>
+
+                    </li>
+                    <li class="blue">
+                        <div class="timetable-time">18:30 <br> 19:00 </div>
+                        <div class="timetable-body">
+
+                            <div class="timetable-name">Кофе-брейк без галстуков</div>
+                            <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+                        </div>
+
+
+                    </li>
+                </ul>
+<!--_________________________________________________________________________________________________________________________________________________-->
+<h3><i class="fa fa-clock-o"></i> 18 ноября 2016 года</h3>
+
+    <ul class="timetable-items">
+
+       <li class="blue">
+            <div class="timetable-time">15:00<br>16:00</div>
             <div class="timetable-body">
 
-                <div class="timetable-name"><span>Мастер-класс по пайке группа №1</span></div>
-                <div class="timetable-place"><b>Место проведения:</b> Красноармейская 147</div>
-		<div class="timetable-place"> Участники мастер-класса построят свою первую электронную схему и узнают принципы работы некоторых электронных компонентов, узнают, как устроены многие окружающие нас электронные устройства. Узнают, что такое электрический ток, какие бывают радиодетали и как они работают, соберут некоторые электронные схемы.
+                <div class="timetable-name">Регистрация + кофе-брейк</div>
+                <!--<div class="timetable-place"><b>Место проведения:</b>105 ауд. 19 к. </div>-->
 
-Программа мастер-класса:
-	<ul>
-	<li>Закон Ома.</li>
-	<li>Базовые электронные компоненты.</li>
-	<li>Макетирование и изготовление печатных плат.</li>
-	<li>Измерительные приборы: мультиметр, осцилограф.</li>
-	<li>Практическое обучение пайке с изготовлением простейшей электронной схемы.</li>
-	</ul>
- 
-                <div class="timetable-body-more">
-                    <p>1.	Ты уже учишься в университете (а возможно даже давно!), искренне считаешь себя закоренелым технарём, знаешь все шутки из соц-сетей о том, как правильно держать паяльник, но при этом никогда этот самый паяльник в руках не держал?! Тогда тебе к нам! 
-Увлекательные тонкости выбора припоя, запах плавящегося материала, романтика выбора оптимальной рабочей температуры и чувство причастности к тайной группе «паявших» не оставит тебя равнодушным в холодные осенние выходные! </p>
- <p><b>Ведущий: </b></p>
-                    <ul type="disc">
-                        <li>Римма Пак  </li>
-<li><a href="http://cmit.ru" target="_blank">ЦМИТ "Дружба"</a></li>
+             </div>
 
-                    </ul>
-                </div>
+
+        </li>
+
+        <li class="blue">
+            <div class="timetable-time">16:00<br>16:30</div>
+            <div class="timetable-body">
+
+                <div class="timetable-name">Приветствие</div>
+                <!--<div class="timetable-place"><b>Место проведения:</b>105 ауд. 19 к. </div>-->
+
             </div>
 
-</li><li class="blue">
+
+        </li>
+
+        <li class="blue">
+            <div class="timetable-time">17:00<br>19:30</div>
+            <div class="timetable-body">
+
+                <div class="timetable-name">Торопа Экспертов </div>
+                <!--<div class="timetable-place"><b>Место проведения:</b>105 ауд. 19 к. </div>-->
+                <div class="timetable-place">Большое мероприятие с приглашенными экспертами для проектных команд. Общение, возможность задать вопросы, получить поддержку от ведущих экспертов города и области, доработка идей и разработок. </div>
+
+            </div>
+
+
+        </li>
+
+        <li class="blue">
+            <div class="timetable-time">18:00</div>
+            <div class="timetable-body">
+
+                <div class="timetable-name">Хакатон: старт </div>
+                <!--<div class="timetable-place"><b>Место проведения:</b>105 ауд. 19 к. </div>-->
+
+            </div>
+
+
+        </li>
+        <li class="blue">
+            <div class="timetable-time">19:30<br>20:00</div>
+            <div class="timetable-body">
+
+                <div class="timetable-name">Кофе-брейк без галстуков</div>
+                <!--<div class="timetable-place"><b>Место проведения:</b>105 ауд. 19 к. </div>-->
+
+            </div>
+
+        </li>
+</ul>
+  <!--  <li class="blue">
             <div class="timetable-time">14:00<br>16:30</div>
             <div class="timetable-body">
 
@@ -373,12 +497,52 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </ul>
                 </div>
             </div>
-        </li>
-
-<h3><i class="fa fa-clock-o"></i> 15 ноября 2015 года</h3>
+        </li> ->>
+<!--__________________________________________________________________________________________________________________________________________________________________-->
+<h3><i class="fa fa-clock-o"></i> 19 ноября 2016 года</h3>
 
        <ul class="timetable-items">
-       <li class="blue">
+           <li class="blue">
+               <div class="timetable-time">14:00 <br> 16:00 </div>
+               <div class="timetable-body">
+
+                   <div class="timetable-name">Консультационная поддержка проектов перед защитой</div>
+                   <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+
+
+                   </div>
+
+           </li>
+           <li class="blue">
+               <div class="timetable-time">16:00 <br> 18:00 </div>
+               <div class="timetable-body">
+
+                   <div class="timetable-name">Большой Воркшоп НТИ</div>
+                   <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+                   <div class="timetable-place"> Обсуждение одной из актуальных проблем внутри групп. Модераторы – приглашенные эксперты.</div>
+
+               </div>
+           </li>
+           <li class="blue">
+               <div class="timetable-time">18:00 <br> 18:30 </div>
+               <div class="timetable-body">
+
+                   <div class="timetable-name">Кофе-брейк без галстуков</div>
+                   <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+
+               </div>
+           </li>
+           <li class="blue">
+               <div class="timetable-time">20:00 </div>
+               <div class="timetable-body">
+
+                   <div class="timetable-name">Хакатон: финиш</div>
+                   <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div> -->
+
+               </div>
+           </li>
+       </ul>
+       <!--<li class="blue">
             <div class="timetable-time">10:00<br>13:00</div>
             <div class="timetable-body">
 
@@ -411,222 +575,56 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
                     
                 </div>
-            </div>
+            </div>             -->
 
-</li><li class="blue">
-            <div class="timetable-time">10:00<br>12:30</div>
+
+
+<!--__________________________________________________________________________________________________________________________________________________________________-->
+    <h3><i class="fa fa-clock-o"></i> 20 ноября 2016 года</h3>
+    <ul class="timetable-items">
+        <li class="blue">
+            <div class="timetable-time">11:30 <br> 12:00 </div>
             <div class="timetable-body">
 
-                <div class="timetable-name"><span>Мастер-класс по пайке группа №3</span></div>
-                <div class="timetable-place"><b>Место проведения:</b> Красноармейская 147</div>
-		<div class="timetable-place"> Участники мастер-класса построят свою первую электронную схему и узнают принципы работы некоторых электронных компонентов, узнают, как устроены многие окружающие нас электронные устройства. Узнают, что такое электрический ток, какие бывают радиодетали и как они работают, соберут некоторые электронные схемы.
+                <div class="timetable-name">Регистрация на защиту</div>
+                <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
 
-Программа мастер-класса:
-	<ul>
-	<li>Закон Ома.</li>
-	<li>Базовые электронные компоненты.</li>
-	<li>Макетирование и изготовление печатных плат.</li>
-	<li>Измерительные приборы: мультиметр, осцилограф.</li>
-	<li>Практическое обучение пайке с изготовлением простейшей электронной схемы.</li>
-	</ul>
- 
-                <div class="timetable-body-more">
-                    <p>1.	Ты уже учишься в университете (а возможно даже давно!), искренне считаешь себя закоренелым технарём, знаешь все шутки из соц-сетей о том, как правильно держать паяльник, но при этом никогда этот самый паяльник в руках не держал?! Тогда тебе к нам! 
-Увлекательные тонкости выбора припоя, запах плавящегося материала, романтика выбора оптимальной рабочей температуры и чувство причастности к тайной группе «паявших» не оставит тебя равнодушным в холодные осенние выходные! </p>
 
-<p><b>Ведущий: </b></p>
-                    <ul type="disc">
-                        <li>Римма Пак  </li>
-<li><a href="http://cmit.ru" target="_blank">ЦМИТ "Дружба"</a></li>
-
-                    </ul>
-                </div>
             </div>
-
-             
-
-        </li><li class="blue">
-            <div class="timetable-time">13:00<br>15:30</div>
-            <div class="timetable-body">
-
-                <div class="timetable-name"><span>Мастер-класс по пайке группа №4</span></div>
-                <div class="timetable-place"><b>Место проведения:</b> Красноармейская 147</div>
-		<div class="timetable-place"> Участники мастер-класса построят свою первую электронную схему и узнают принципы работы некоторых электронных компонентов, узнают, как устроены многие окружающие нас электронные устройства. Узнают, что такое электрический ток, какие бывают радиодетали и как они работают, соберут некоторые электронные схемы.
-
-Программа мастер-класса:
-	<ul>
-	<li>Закон Ома.</li>
-	<li>Базовые электронные компоненты.</li>
-	<li>Макетирование и изготовление печатных плат.</li>
-	<li>Измерительные приборы: мультиметр, осцилограф.</li>
-	<li>Практическое обучение пайке с изготовлением простейшей электронной схемы.</li>
-	</ul>
- 
-                <div class="timetable-body-more">
-                    <p>1.	Ты уже учишься в университете (а возможно даже давно!), искренне считаешь себя закоренелым технарём, знаешь все шутки из соц-сетей о том, как правильно держать паяльник, но при этом никогда этот самый паяльник в руках не держал?! Тогда тебе к нам! 
-Увлекательные тонкости выбора припоя, запах плавящегося материала, романтика выбора оптимальной рабочей температуры и чувство причастности к тайной группе «паявших» не оставит тебя равнодушным в холодные осенние выходные! </p>
-
-<p><b>Ведущий: </b></p>
-                    <ul type="disc">
-                        <li>Римма Пак  </li>
-<li><a href="http://cmit.ru" target="_blank">ЦМИТ "Дружба"</a></li>
-
-                    </ul>
-                </div>
-            </div>
-
-               
-
-        </li><li class="blue">
-            <div class="timetable-time">14:00<br>16:00</div>
-            <div class="timetable-body">
-
-                <div class="timetable-name"><span>Написание гранта</span></div>
-                <div class="timetable-place"><b>Место проведения:</b> 105 ауд. 19к.</div>
-		<div class="timetable-place"> Как найти идею для проекта?
-Как убедить конкурсную комиссию дать денег для его реализации?
-Как использовать полученные средства?
-Как написать грамотный отчет?
-Мастер-класс от человека, который сделал это.
-<div class="timetable-body-more">
-<p><b>Ведущий: </b></p>
-                    <ul type="disc">
-                        <li>Аполлинария Ракина,студентка 3 курса ЭТО, воплотившая проект «Ветросвет» в жизнь.  </li>
-
-                    </ul>
-                
-            </div>
-</div>
         </li>
-            
+        <li class="blue">
+            <div class="timetable-time">12:00 <br> 14:00 </div>
+            <div class="timetable-body">
 
-    <h3><i class="fa fa-clock-o"></i> 20 ноября 2015 года</h3>
+                <div class="timetable-name">Итоговая защита проектов </div>
+                <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
+                <div class="timetable-place"> Защита проработанных проектов по секциям.</div>
 
-         <ul class="timetable-items">
-    <li class="blue">
-        <div class="timetable-time">15:50 <br> 16:10 </div>
-        <div class="timetable-body">
-
-            <div class="timetable-name">Регистрация участников. Приветственный кофе  </div>
-            <div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>
-	    <div class="timetable-body-more">
-                <p>
-		Вы регистрировались на сайте, регистрировали отдельно свой правильно оформленный проект, теперь вас ждет третья регистрация – на самой Ярмарке.
-		Она нужна, чтобы подтвердить ваше участие, зафиксировать возможные изменения в составе команды, раздать необходимые материалы. 
-		Пожалуйста, придите на регистрацию раньше, чтобы успеть до начала мероприятия.
-                </p>
-
-
-        </div>
-    </li><li class="blue">
-        <div class="timetable-time">16:10<br> 16:20</div>
-        <div class="timetable-body">
-
-            <div class="timetable-name"><span>Официальное открытие</span></div>
-            <div class="timetable-place"><b>Место проведения:</b> 139 ауд. 19к.</div>
-	    <div class="timetable-place"> Открытие Ярмарки, знакомство с форматом предстоящей работы, рассказ о приглашенных экспертах, а также получение личной траектории работы на первый день ярмарки
-            <div class="timetable-body-more">
-                <p>Официальное открытие – это всегда важно. Ведь вы читали (или не читали) программу, присутствовали на предыдущих ярмарках и что-то о ней уже представляете. Открытие поможет вам не попасть в ловушку собственных ожиданий, понять, чего стоит ждать от ярмарки, и что должно получиться у вас на выходе. Вы познакомитесь с предстоящим вам форматом, с людьми, которые будут работать с вами на протяжении трех дней, и просто зарядитесь позитивной энергией.</p>
-				
-<p><b>Ведущий: </b></p>
-                    <ul type="disc">
-                        <li>Серебрякова Евгения Николаевна, начальник ОЭО, директор IQ Group  </li>
-
-                    </ul>
-                
-            
             </div>
-        </div>
-    </li>
+        </li>
+        <li class="blue">
+            <div class="timetable-time">14:00 <br> 14:30 </div>
+            <div class="timetable-body">
 
-        
+                <div class="timetable-name">Кофе-брейк</div>
+                <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div>-->
 
-             <li class="green">
-                 <div class="timetable-time">16:20<br>17:20</div>
-                 <div class="timetable-body">
-
-                     <div class="timetable-name"><span>Ток-шоу «Что привело меня к успеху». Реальные истории элитников</span></div>
-                     <div class="timetable-place"><b>Место проведения:</b> 139 ауд. 19к.</div>
-		     <div class="timetable-place"> Сейчас ни для кого не существует преград в получении информации. Ее в избытке в интернете, а для особо искушенных – в библиотеках. Но суть успеха для создания проектов совсем не в знании, а в умелом его применении.
-                             Студенты ЭТО расскажут о том, что они испытали на себе, где оступались, как делать совершенно нельзя, а как наоборот нужно. Чисто практические знания от тех, кто уже проходил путь создания проекта.
-                     <div class="timetable-body-more">
-                         <p>
-			 Долгое время на ярмарках в Ток-шоу участвовали исключительно эксперты. Люди, которые добились многого приходили и рассказывали, с чего они начинали, как ведут себя сейчас, что сейчас востребовано в мире. Это важная информация, да. Но в этом году мы хотим совершенно изменить формат ток-шоу.
-			 Теперь нашими экспертами будут ваши коллеги – студенты ЭТО, которые смогли воплотить свои проекты в жизнь. И кто, как не они, знают, что на самом деле нужно делать (и НЕ делать) студенту, чтобы у него получился стоящий проект, в который экспертам хочется вкладываться.
-			 Они на своем личном опыте переживали взлеты, падения, простои из-за долгого совершения операций в ВУЗе. Но они не сдались и воплотили в жизнь свои идеи. Их опыт может теперь помочь вам, чтобы пройти тот же путь, не наступая на их грабли.
-                         </p>
-
-                         <p><b>Ведущий: </b></p>
-                    <ul type="disc">
-                        <li>Апполинария Ракина, студентка 3 курса ЭТО, реаилзовала проект «Ветросвет»</li>
-						<li>Дусеев Вагиз, выпускник ЭТО, реализовал свой проект и продал его и свои услуги крупной компании.</li>
-						<li>Стариков Дмитрий, выпускник ЭТО, реализовал проект «Доступ в 105 аудиторию с помощью электронного замка»</li>
-
-                    </ul>
-                     </div>
-                 </div>
-             </li>
-
-             <li class="green">
-        <div class="timetable-time">17:20<br>17:30</div>
-        <div class="timetable-body">
-
-            <div class="timetable-name"><span>Кофе-брейк «без галстуков» с гостями Ярмарки </span></div>
-            <div class="timetable-place"><b>Место проведения:</b> 139 ауд. 19к.</div>
-	    <div class="timetable-place">Все, кто не успел задать вопрос, заинтересовался подробностями или просто хочет поговорить о важном с интересным человеком, могут использовать свой шанс за чашечкой чая. Успевайте!
-            
-        </div>
-    </li>
-
-    <li class="green">
-        <div class="timetable-time">17.30<br>19.30</div>
-        <div class="timetable-body">
-
-            <div class="timetable-name"><span>Work-shop «Кузница идей» </span></div>
-            <div class="timetable-place"><b>Места проведения:</b> 105, 139, 112, 113, 114, 115 ауд. 19к.</div>
-	    <div class="timetable-place"> Работа над идеей в формате плакатной презентации, знакомство с командой проекта (сформированной по вакансиям на сайте), защита идеи проекта в группах студентов под руководством куратора-эксперта, доработка идеи, определение отрасли проекта для экспертного дня – все это ждет тебя на Кузнице идей.
-            <div class="timetable-body-more">
-                <p> К моменту кузницы вы уже поймете, что вам предстоит в три дня Ярмарки, как нужно и не нужно делать проекты, что приводит к успеху, что от него отодвигает. 
-Кузница в списке мероприятий первая, с которой начнется работа по вашим проектам.
-Если, приходя на ярмарку часто вы имеете лишь идею к воплощению, или может вы близки к реализации проекта, но вам чего-то не хватает – то здесь из вашей идеи будут ковать настоящий проект.
-Вам расскажут, что такое проект, чем он отличается от мечты и идеи. Каким он должен быть, чтобы все вокруг поняли ваш проект. В командах и с помощью эксперта вы разберете ваши идеи на составляющие, посмотрите на них под другим углом, поможете другим командам понять куда двигаться, а они, в свою очередь, помогут вам. Проделанная работа сделает вашу идею закаленной и имеющей право называться гордым сломов Проект!
-
-                
-<p><b>Ведущий: </b></p>
-                    <ul type="disc">
-                        <li>Максим Рудь</li>
-						<li>Зайковская Анастасия </li>
-						<li>Василий Сорокин</li>
-						<li>Липовка Анна </li>
-						<li>Александр Пантюхин</li>
-                    </ul>
-            
             </div>
+        </li>
+        <li class="blue">
+            <div class="timetable-time">14:30 <br> 15:00 </div>
+            <div class="timetable-body">
 
+                <div class="timetable-name">Награждение</div>
+                <!--<div class="timetable-place"><b> Место проведения:</b> 139ауд.(коридор) 19к.</div> -->
+                <div class="timetable-place"> Вручение подарков и призов победителям.</div>
 
-        </div>
-    </li><li class="green">
-        <div class="timetable-time">19:30<br>21:00
-        </div>
-        <div class="timetable-body">
-
-            <div class="timetable-name"><span>Самостоятельная работа внутри групп</span></div>
-            <div class="timetable-place"><b>Место проведения:</b> 105 ауд. 19 к.</div>
-	    <div class="timetable-place"> Возможность доработать проект с командой
-            <div class="timetable-body-more">
-                <p> Этот пункт очень важен! Потому что главная цель ярмарки – помочь всем ее участникам начать такие проекты, которые уже до конца года воплотятся в жизнь. Или же помочь проектам, которые уже давно существуют, наконец-то завершиться.
-Для вас 105 аудитория будет открыта до 21:00, чтобы дать вам возможность собраться вместе со своей командой, познакомиться с ними поближе, если вы не были знакомы до ярмарки, проговорить все, что произошло за день и понять, куда движется ваш проект, как следует его воплощать.
-Воспользуйтесь этой возможностью! При подготовке проектов заранее ваши шансы на победу увеличиваются – просто потому, что вы сами понимаете свой проект, и можете поэтому донести его до экспертов.
-</p>
             </div>
-
-
-        </div>
-
-    </li>
+        </li>
     </ul>
 
-    <h3><i class="fa fa-clock-o"></i> 21 ноября 2015 года</h3>
+<!--__________________________________________________________________________________________________________________________________________________________________-->
+    <!-- <h3><i class="fa fa-clock-o"></i> 21 ноября 2015 года</h3>
 
         <ul class="timetable-items">
     <li class="blue">
@@ -883,7 +881,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 </div>
             </div>
         </li>
-    </ul>
+    </ul>-->
 
 
         </div>
@@ -982,6 +980,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         
 
     </footer>
+
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+
+
 
 </body>
 </html><?php }} ?>

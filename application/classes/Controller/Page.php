@@ -110,27 +110,6 @@ class Controller_Page extends Controller_Common {
 
             }
         }
-
-        //Поиск по вакансиям
-            if(isset($_GET))
-            {
-                if(isset($_GET['tags']))
-                {
-                    $count = count($vacancies);
-                    for ($vacancia = 0; $vacancia < $count; $vacancia++)
-                    {
-
-                        foreach ($_GET['tags'] as $tag)
-                        {
-                            if (stripos($vacancies[$vacancia]->description, $tag) == false)
-                            {
-                                unset($vacancies[$vacancia]);
-                                break;
-                            }
-                        }
-                    }
-                }
-            }
         $view
             ->set('participant', $participant)
             ->set('vacancies', $vacancies)
@@ -138,6 +117,28 @@ class Controller_Page extends Controller_Common {
             ->set('tags', $tags);
 
         $this->response->body($view);
+
+
+        //Поиск по вакансиям
+        if(isset($_GET))
+        {
+            if(isset($_GET['tags']))
+            {
+                $count = count($vacancies);
+                for ($vacancia = 0; $vacancia < $count; $vacancia++)
+                {
+
+                    foreach ($_GET['tags'] as $tag)
+                    {
+                        if (stripos($vacancies[$vacancia]->description, $tag) == false)
+                        {
+                            unset($vacancies[$vacancia]);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     /**

@@ -55,11 +55,14 @@ position: absolute;
 background-color: black;
 width:20%;
 }
+/*----------------------------about-------------------------*/
+.about {
+    text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+    line-height: 1.5;
+}
 
-
-
-
-
+/*-----------------------------------------------------*/
 .logoText
 {
     line-width: 50% !important;

@@ -7,7 +7,7 @@
 
 
     <title>Ярмарка проектов</title>
-    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -65,7 +65,7 @@
                 <ul class="list-menu">
                     <li class="sidebar-option"><a href="/"><div class="btm">Главная</div></a></li>
                     <!--  <li class="sidebar-option"><a href="{URL::site('titles')}"><div class="btm">Спикеры</div></a></li> -->
-                   <!-- <li class="sidebar-option"><a href="{URL::site('sections')}"> <div class="btm">Программа ярмарки</div></a></li> -->
+                   <li class="sidebar-option"><a href="{URL::site('sections')}"> <div class="btm">Программа ярмарки</div></a></li>
                     <li class="sidebar-option"><a href="#"> <div class="btm">Проекты</div></a>
                         <ul  class="sub_menu" >
                             <li class="sidebar-option"><a href="{URL::site('ideas')}"><div class="btm">Банк идей</div></a></li>
@@ -75,7 +75,7 @@
                     <li class="sidebar-option"><a href="{URL::site('projects')}"> <div class="btm">Проекты на IME</div></a></li>
                     <!--<li class="sidebar-option"><a href="{URL::site('vacancies')}"> <div class="btm">Вакансии</div></a></li>
                     <li class="sidebar-option"><a href="{URL::site('experts')}"><div class="btm">Эксперты</div></a></li>
-                    <li class="sidebar-option"><a href="{URL::site('foto')}"><div class="btm">Галерея </div></a></li> -->
+                    <li class="sidebar-option"><a href="{URL::site('foto')}"><div class="btm">Галерея </div></a></li>-->
                     <li class="sidebar-option"><a href="{URL::site('about')}"><div class="last btm">О Ярмарке</div></a></li>
                 </ul>
             </div>
@@ -197,16 +197,12 @@
         {/literal}
 
     </footer>
-    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
 
+    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
     <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
     <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
 
-    <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="/assets/js/ideas.js" type="text/javascript"></script>
+
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 
 {block 'content'}
 
-    <link href="/assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
+
 
     <ul class="nav nav-tabs" style="margin-top:30px; margin-bottom: 30px">
         <li role="presentation"><a href="{url route='personal' action='projects'}">Мои проекты</a></li>
@@ -236,7 +236,7 @@
     <script src="/assets/js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="/assets/js/additional-methods.min.js" type="text/javascript"></script>
     <script src="/assets/js/register.js" type="text/javascript"></script>
-    <script src="/assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+
 
 {/block}
 

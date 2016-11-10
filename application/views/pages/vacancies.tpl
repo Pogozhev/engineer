@@ -11,7 +11,7 @@
     <hr><br>
         <form class="form_search" id="form_search" action="{url route='default' controller='page' action='vacancies'}" method="GET">
 
-            <label for="tags">Поиск идей по ключевым словам или описанию:</label>
+            <label for="tags">Поиск вакансии по ключевым словам или описанию:</label>
             <div class="input-group col-md-12">
                 <div class="col-md-8">
                     <select id="tags" name="tags[]" class="form-control select2-input-tags" multiple="multiple">
@@ -61,4 +61,5 @@
             {/if}
         {/foreach}
     </div>
+    <script src="/assets/js/vacancies.js" type="text/javascript"></script>
 {/block}

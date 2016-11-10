@@ -1,5 +1,7 @@
 $(document).ready(function($) {
-
+    $(".select2-input-tags").select2({
+        tags: true
+    });
     //Ограничение на количество вакансий
     var maxVacanciesAmount = 7;
     var $add_vacancy_forms = $(".add_vacancy");

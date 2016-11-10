@@ -36,7 +36,7 @@ class Controller_Personal extends Controller_Common {
      */
     public function action_projects()
     {
-        $tags = ORM::factory('Idea_Tag')->find_all();
+        $tags = ORM::factory('Participant_Tag')->find_all();
         $view = View::factory('/personal/projects.tpl');
         Helper_Common::init_roles($view);
 

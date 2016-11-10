@@ -2,7 +2,7 @@
 
      <h4>
         &#10149; Вакансия
-        <button type="button" class="btn-xs btn-success add_vacancy[vid] addb" style="margin-bottom: 7px">Добавить вакансию</button>
+        <!--<button type="button" class="btn-xs btn-success add_vacancy[vid] addb" style="margin-bottom: 7px">Добавить вакансию</button>-->
     </h4>
 
     <div class="input-group col-md-12">
@@ -29,14 +29,14 @@
     <label for="tags">Подберите категории/ключевые слова к вакансии (или введите свои):</label>
 
     <div class="input-group col-md-12">
-        <select id="tags" name="tags[]" class="form-control select2-input-tags" multiple="multiple">
+        <select id="vacancy_tags[vid]" name="vacancy_tags[vid][]" class="form-control select2-input-tags" multiple="multiple">
             {foreach $tags as $tag}
                 <option value="{$tag->name}">{$tag->name}</option>
             {/foreach}
-         </select>
+        </select>
     </div>
 
-    <script src="/assets/js/vacancy.js" type="text/javascript"></script>
+
 
 </div>
 

@@ -1,4 +1,5 @@
 $(document).ready(function($) {
+//----------------------------------------------------------------------------------------------------------------------------
    //Валидация формы команды
     var validatorOptions = {
         rules: {
@@ -44,7 +45,7 @@ $(document).ready(function($) {
 
     var form = $("#project_form");
     form.validate(validatorOptions);
-
+//----------------------------------------------------------------------------------------------------------------------------
     //Валидация динамических полей
     function addRules(objects) {
         objects.find(".val-required").each(function () {
@@ -66,11 +67,11 @@ $(document).ready(function($) {
         });
     }
 
-
+//----------------------------------------------------------------------------------------------------------------------------
     //Динамическое добавление/удаление приглашений (в прошлом - участников)
     var invitationsCurrent = 0,
         invitationsAmount = 0,
-        maxInvitationsAmount = 7,
+        maxInvitationsAmount = 4,
         invitations = $('#invitations');
 
     function addInvitation(invitationsCount) {
@@ -82,7 +83,7 @@ $(document).ready(function($) {
         initializeCurrentInvitation(invitationsCount);
     }
 
-    function initializeCurrentInvitation(invitationsCount)
+     function initializeCurrentInvitation(invitationsCount)
     {
         $('#remove_author\\['+invitationsCount+'\\]').on('click', function() {
             if(invitationsAmount > 0)
@@ -105,14 +106,15 @@ $(document).ready(function($) {
         });
         addRules(invitations);
     }
+ initializeCurrentInvitation(invitationsCurrent);
 
-    initializeCurrentInvitation(invitationsCurrent);
+//----------------------------------------------------------------------------------------------------------------------------
 
 
     //Динамическое добавление/удаление вакансий
     var vacanciesCurrent = 0,
         vacanciesAmount = 0,
-        maxVacanciesAmount = 7,
+        maxVacanciesAmount = 1,
         vacancies = $('#vacancies');
 
     function addVacancy(vacanciesCount) {
@@ -121,25 +123,16 @@ $(document).ready(function($) {
         var newVacancy = tmp.children().clone().appendTo(vacancies);
         newVacancy.slideDown().css('width', '100%');
         initializeCurrentVacancy(vacanciesCount);
+
         $(".select2-input-tags").select2({
             tags: true
         });
-        $(".select2-input-tags").select2({
-            tags: true
-        });
-        $(".select2-input-tags").select2({
-            tags: true
-        });
-        $(".select2-input-tags").select2({
-            tags: true
-        });
-        $(".select2-input-tags").select2({
-            tags: true
-        });
+
     }
 
     function initializeCurrentVacancy(vacanciesCount)
     {
+
         $('#remove_vacancy\\['+vacanciesCount+'\\]').on('click', function() {
             if(vacanciesAmount > 0)
             {
@@ -147,11 +140,30 @@ $(document).ready(function($) {
                 $('.collapse.vacancy[data-id="'+vacanciesCount+'"]').slideUp("slow", function () {
                     $(this).remove();
                 });
+
             }
 
         });
 
-        $('.add_vacancy\\['+vacanciesCount+'\\]').each(function() {
+//--------------------------- Проверка на макс. число вакансий и приглашений  ------------------------------------------
+        //Дополнительная кнопка добавления Вакаисий)
+       $('.add_vacancy\\['+vacanciesCount+'\\]').each(function() {
+            $(this).on('click', function(){
+                if(vacanciesAmount < maxVacanciesAmount)
+                {
+                    vacanciesCurrent++;
+                    vacanciesAmount++;
+                    addVacancy(vacanciesCurrent);
+                }
+            });
+
+       });
+
+        addRules(vacancies);
+    }
+
+        //Стартовые кнопки (кнопка добавления Вакаисий)
+         $('.add_vacancy').each(function() {
             $(this).on('click', function(){
                 if(vacanciesAmount < maxVacanciesAmount)
                 {
@@ -162,23 +174,8 @@ $(document).ready(function($) {
             });
         });
 
-        addRules(vacancies);
-    }
-
-    //Стартовые кнопки
-    $('.add_vacancy').each(function() {
-        $(this).on('click', function(){
-            if(vacanciesAmount < maxVacanciesAmount)
-            {
-                vacanciesCurrent++;
-                vacanciesAmount++;
-                addVacancy(vacanciesCurrent);
-
-            }
-        });
-    });
-
-    $('.add_author').each(function() {
+    // Кнопка добавления приглашений
+     $('.add_author').each(function() {
         $(this).on('click', function(){
             if(invitationsAmount < maxInvitationsAmount)
             {
@@ -188,8 +185,5 @@ $(document).ready(function($) {
             }
         });
     });
-
-
-
 });
 

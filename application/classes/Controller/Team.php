@@ -23,11 +23,20 @@ class Controller_Team extends Controller_Common {
      */
     public function action_add_vacancy()
     {
+        $tags = '';
+        $post = $_POST;
+        foreach($post['tags'] as $tag)
+        {
+            if(substr($tag, 0, 1) != "#")
+                $tag = "#" . $tag;
+            $post['vacancy_description'] = $post['vacancy_description'] . " " . $tag;
+        }
+
+
         ORM::factory('Vacancy')
             ->set('title', $_POST['vacancy_title'])
-            ->set('description', $_POST['vacancy_description'])
+            ->set('description', $post['vacancy_description'])
             ->set('project_id', $_POST['project_id'])
-            ->set('tags', $tags)
             ->save();
 
         $this->redirect($this->request->referrer());

@@ -142,5 +142,5 @@
             </div>
         {/if}
     {/foreach}
-
+    <script src="/assets/js/ideas.js" type="text/javascript"></script>
 {/block}
